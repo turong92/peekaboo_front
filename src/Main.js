@@ -18,7 +18,7 @@ class  Main extends Component {
                     </div>
                     <div className="right">
                         <div className="right1">
-                        <h2>오른쪽1</h2>
+                        <h2>오른쪽1222</h2>
                         </div>
                         <div className="right2">
                         <h2>오른쪽2</h2>
