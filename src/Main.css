@@ -1,0 +1,26 @@
+.left {
+  width: 500px;
+  float : left;
+  background-color: blue;
+}
+
+
+
+.right{
+  width: calc(100% - 500px);
+  float : left;
+  background-color: blueviolet;
+}
+
+.right1{
+  width : calc(50%);;
+  float: left;
+  background-color: aqua;
+}
+
+.right2{
+  width : calc(50%);;
+  float: left;
+
+  background-color: red;
+}
