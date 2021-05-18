@@ -29,7 +29,7 @@ function Signup(props) {
      
         return (
             <div>
-            <form className="form-Login">
+            <form className="">
                 <h1>회원가입 페이지</h1>
                 <h4><label> ID </label>
                     <input type="email" placeholder="Email address" required autoFocus />

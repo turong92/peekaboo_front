@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-class Login extends React.Component {
-    render () {
+
+
+
+function Login(props) {
+        
+        const [Id, setId] = useState("")
+        const [Password, setPassword] = useState("")
+        
+
+
         return (
-            <form className="form-Login">
+            <div>
+            <form className="">
                 <h1>로그인 페이지</h1>
-                <label for="inpEmail" className="sr-only"> ID </label>
-                <input type="text" id="inputid" className="form-control" placeholder="Id or Email address" required autoFocus />
-                <label for="inpPassword" className="sr-only"> Password</label>
-                <input type="password" id="inputPassword" className="form-control" placeholder="Password" required />
+                <h4>
+                <label> ID </label>
+                <input type="text" placeholder="Id" required autoFocus />
+                </h4>
+                <h4>
+                <label> Password</label>
+                <input type="password" placeholder="Password" required />
+                </h4>
                 <button className="" >Login</button>
             </form>
-
+            </div>
         )
     }
-    handleIdChange(e){
-        this.setState({id:e.target.value})
-    }
-    handlePasswordChange(e){
-        this.setState({password:e.target.value})
-    }
-};
+
+
 
 
 
