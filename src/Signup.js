@@ -1,26 +1,62 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Axios from 'axios';
 
-class Signup extends React.Component {
-    render () {
+
+
+
+function Signup(props) {
+
+    const [Email, setEmail] = useState("")
+    const [Name, setName] = useState("")
+    const [Password, setPassword] = useState("")
+    const [ConfirmPassword, setConfirmPassword] = useState("")
+    
+    const onEmailHandler = (event) => {
+        setEmail(event.currentTarget.value)
+    }
+
+    const onNameHandler = (event) => {
+        setName(event.currentTarget.value)
+    }
+
+    const onPasswordHandler = (event) => {
+        setPassword(event.currentTarget.value)
+    }
+
+    const onConfirmPasswordHandler = (event) => {
+        setConfirmPassword(event.currentTarget.value)
+    }
+     
         return (
+            <div>
             <form className="form-Login">
-                <h1>로그인 페이지</h1>
-                <label for="inpEmail" className="sr-only"> ID </label>
-                <input type="text" id="inputid" className="form-control" placeholder="Id or Email address" required autoFocus />
-                <label for="inpPassword" className="sr-only"> Password</label>
-                <input type="password" id="inputPassword" className="form-control" placeholder="Password" required />
-                <button className="" >Login</button>
+                <h1>회원가입 페이지</h1>
+                <h4><label> ID </label>
+                    <input type="email" placeholder="Email address" required autoFocus />
+                    <button className="">중복체크</button>
+                </h4>
+                <h4><label> 닉네임</label>
+                    <input type="text"placeholder="nickname" required />
+                    <button className="">중복체크</button>
+                </h4>
+                <h4><label> Password</label>
+                    <input type="password"placeholder="Password" required />
+                </h4>
+                <h4><label> Password 확인</label>
+                    <input type="password"placeholder="Password check" required />
+                    <button className="">비밀번호 확인</button>
+                </h4>
+                <button className="" >Signup</button>
             </form>
-
+                {/* <div>
+                    <h3>id : {}</h3>
+                    <h3>nickname : {} </h3>
+                    <h3>password : {} </h3>
+                </div> */}
+            </div>
         )
-    }
-    handleIdChange(e){
-        this.setState({id:e.target.value})
-    }
-    handlePasswordChange(e){
-        this.setState({password:e.target.value})
-    }
-};
+    
+}
 
 
 
