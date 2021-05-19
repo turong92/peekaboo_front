@@ -11,7 +11,7 @@ class TOC extends Component {
     render(){
       console.log('===>TOC render');
       var lists = [];
-      var data =this.props.data;
+      var data = this.props.data;
       var i = 0;
       while(i<data.length){
         lists.push(
