@@ -13,9 +13,19 @@ class  Main extends Component {
             <div>
                 <head></head>
                 <body>
+                    <haeder>
                     <div className="left">
-                        <h2>왼쪽</h2>
+                        <nav>
+                            <a href="">홈1</a>
+                            <a href="">홈2</a>
+                            <a href="">홈3</a>
+                            <a href="">홈4</a>
+                            <a href="">홈5</a>
+                            <a href="">홈6</a>
+                            <a href="">홈7</a>
+                        </nav>
                     </div>
+                    </haeder>
                     <div className="right">
                         <div className="right1">
                         <h2>오른쪽1222</h2>
