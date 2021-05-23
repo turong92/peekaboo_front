@@ -125,7 +125,7 @@ class App extends Component {
                     _contents.splice(i, 1);
                     break;
                   }
-                  i = i + 1;  
+                  i = i + 1;
                 }
                 this.setState({contents:_contents, mode:"welcome"})
               }
@@ -141,16 +141,16 @@ class App extends Component {
 
 export default App;
 
-// const [message, setMessage] = useState("");
+// // const [message, setMessage] = useState("");
 
-// // 첫번째 렌더링을 다 마친 후 실행합니다.
-// useEffect(
-//   () => {
-//     // 클라이언트의 IP주소를 알아내는 백엔드의 함수를 호출합니다.
-//     axios.get('/test')
-//     .then(response => response.data)
-//     .then(message => {
-//       setMessage(message);
-//     });
+// // // 첫번째 렌더링을 다 마친 후 실행합니다.
+// // useEffect(
+// //   () => {
+// //     // 클라이언트의 IP주소를 알아내는 백엔드의 함수를 호출합니다.
+// //     axios.get('/test')
+// //     .then(response => response.data)
+// //     .then(message => {
+// //       setMessage(message);
+// //     });
 
-//   }, [])
+// //   }, [])
