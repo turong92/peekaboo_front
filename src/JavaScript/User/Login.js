@@ -2,14 +2,22 @@ import React, { Component } from 'react';
 import "../../CSS/User/Login.css";
 
 class Login extends Component {
+<<<<<<< HEAD
  /*   
+=======
+    
+>>>>>>> 5ff8d652cec6c4d931cc41c9133205d749d44bea
     constructor(props){
         super(props);
       
         const [Id, setId] = useState("")
         const [Password, setPassword] = useState("")
         }
+<<<<<<< HEAD
   */  
+=======
+    
+>>>>>>> 5ff8d652cec6c4d931cc41c9133205d749d44bea
       render(){
     return (
 
