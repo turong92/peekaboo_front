@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
+import "../../CSS/User/Login.css";
 
-
-
-
-function Login(props) {
-        
+class Login extends Component {
+ /*   
+    constructor(props){
+        super(props);
+      
         const [Id, setId] = useState("")
         const [Password, setPassword] = useState("")
-        
+        }
+  */  
+      render(){
+    return (
 
+      <div className="Login">
 
-        return (
-            <div>
             <form className="">
                 <h1>로그인 페이지</h1>
                 <h4>
@@ -24,12 +27,9 @@ function Login(props) {
                 </h4>
                 <button className="" >Login</button>
             </form>
-            </div>
-        )
-    }
-
-
-
-
+      </div>
+    );
+  }
+}
 
 export default Login;
