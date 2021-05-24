@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import "../../CSS/Home/HomeRight.css";
+import Recommend from "./Recommend";
 
 class HomeRight extends Component {
       render(){
     return (
       <div className="HomeRight">
-          HomeRight
+          <Recommend></Recommend>
       </div>
     );
   }
