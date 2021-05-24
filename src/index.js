@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Main from './JavaScript/Main/Main';
 import Home from './JavaScript/Home/Home';
-import {HashRouter, Route, Switch, NavLink, useParams} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 
 function App(){
   return(
