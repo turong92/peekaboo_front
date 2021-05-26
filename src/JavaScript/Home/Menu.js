@@ -9,15 +9,28 @@ class Menu extends Component {
 
     render(){
         return(
-            <nav className="menuNav">
-                <div><NavLink to="/home">홈</NavLink></div>
-                <div><NavLink to="/">알림</NavLink></div>
-                <div><NavLink to="/">쪽지</NavLink></div>
-                <div><NavLink to="/">북마크</NavLink></div>
-                <div><NavLink to="/">리스트</NavLink></div>
-                <div><NavLink to="/">프로필</NavLink></div>
-                <div><NavLink to="/">더보기</NavLink></div>
-            </nav>
+            <div>
+            <div className="aaa">
+                <div>
+                    <div>IMG <NavLink to="/home">홈</NavLink></div>
+                </div>
+                <nav className="menuNav">
+                    <div>IMG <NavLink to="/home">홈</NavLink></div>
+                    <div>IMG <NavLink to="/">알림</NavLink></div>
+                    <div>IMG <NavLink to="/">쪽지</NavLink></div>
+                    <div>IMG <NavLink to="/">북마크</NavLink></div>
+                    <div>IMG <NavLink to="/">리스트</NavLink></div>
+                    <div>IMG <NavLink to="/">프로필</NavLink></div>
+                    <div>IMG <NavLink to="/">더보기</NavLink></div>
+                </nav>
+                <div className="BtnDiv">
+                    <button className="BtnLeft"><span>트윗하기</span></button>
+                </div>
+                <div className="UserMenu">
+                    유저 정보
+                </div>
+            </div>
+            </div>
         );
     }
 }

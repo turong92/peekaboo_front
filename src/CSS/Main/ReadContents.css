@@ -1,0 +1,13 @@
+.board {
+
+background-color:gray;
+width: 400px;
+min-height: 200px;
+}
+
+.textform {
+
+  
+    
+    word-break:break-all;
+}

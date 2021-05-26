@@ -1,3 +1,40 @@
+.aaa{
+    float:right;
+    max-width: 300px;
+    margin-right: 20px;
+}
 .menuNav{
+    
+    padding : 0.5rem;
+    text-align: center;
+}
 
+
+.BtnDiv{
+    
+ 
+}
+.BtnLeft {
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight : bold;
+    padding : 0.5rem 2rem;
+    outline : none;
+    cursor : pointer;
+    background-color: rgb(22, 124, 241);
+    min-width: 70%;
+   
+}
+
+span {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.UserMenu{
+
+    bottom : 10px;
+   
+    
 }
