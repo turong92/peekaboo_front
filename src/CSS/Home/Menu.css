@@ -1,6 +1,5 @@
 .aaa{
     float:right;
-    max-width: 300px;
     margin-right: 20px;
 }
 .menuNav{
@@ -14,6 +13,13 @@
     
  
 }
+
+.Navlink{
+    padding : 10px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
 .BtnLeft {
     border: none;
     border-radius: 4px;

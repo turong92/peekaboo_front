@@ -1,6 +1,17 @@
 .HomeLeft{
+    width: 250px;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 20px;
     float: left;
     font-size: 30px;
     min-width: 30%;
     text-align: center;
+    border: 1px solid;
+}
+
+.blank
+{
+    width: 250px;
+    height: 250px;
 }
