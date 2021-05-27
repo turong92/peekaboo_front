@@ -9,7 +9,7 @@ class ReadContents extends Component {
             //contents:[]
             //아래 contents는 dummy입니다.
             contents:[
-                {idx:1, id:"dummy1", insertTime:"2021-05-07", content:"1", viewCnt:999},
+                {idx:1, id:"dummy1", insertTime:"2021-05-07", content:"12222222222222222222222222222333333333333333333333333333333333333333333333", viewCnt:999},
                 {idx:2, id:"dummy2", insertTime:"2021-05-06", content:"2 어엿비너겨", viewCnt:999},
                 {idx:3, id:"dummy3", insertTime:"2021-05-05", content:"3", viewCnt:999},
             ]
@@ -61,15 +61,14 @@ class ReadContents extends Component {
         return(
             <div>
                 <div>
-                    <h1>게시글 폼</h1>
-                    <h1>글작성 -> list에 정보 담고 -> 게시글 렌더링</h1>
-                    <h1>글작성시 idx는 +1, id는 받아오고, 시간받아오고, 내용</h1>
-                    <form className= "board"> 
-                        <input type="text" className="textform"></input>
-                        <button>작성하기</button>
-                    </form>
+                    <div className="board"> 
+                        <div><input className="email" label="text" name ="text" placeholder="게시글" type="text"/></div>
+                        <div><button className="btn2">트윗하기</button></div>
+                    </div>
+                    <div className="">
+                        {list}
+                    </div>
                 </div>
-                {list}
             </div>
         );
     }

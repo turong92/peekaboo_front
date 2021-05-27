@@ -1,5 +1,5 @@
 .HomeLeft{
-    width: 250px;
+    width: 200px;
     height: auto;
     padding: 30px;
     margin-bottom: 20px;
@@ -8,10 +8,11 @@
     min-width: 30%;
     text-align: center;
     border: 1px solid;
+    
 }
 
 .blank
 {
-    width: 250px;
+    width: 2s0px;
     height: 250px;
 }

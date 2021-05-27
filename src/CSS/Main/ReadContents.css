@@ -1,13 +1,28 @@
 .board {
 
-background-color:gray;
 width: 400px;
-min-height: 200px;
+min-height: 100px;
+
 }
 
 .textform {
-
-  
-    
+    min-width: 400px;
+    min-height: 100px;
     word-break:break-all;
+    white-space: nowrap;
+}
+
+.btn2{
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight : bold;
+    padding : 0.5rem 2rem;
+    margin-top: 15px;
+    outline : none;
+    cursor : pointer;
+    background-color: rgb(22, 124, 241);
+    min-width: 20%;
+    float: right;
+    
 }
