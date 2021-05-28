@@ -1,9 +1,61 @@
-.board {
-
-width: 400px;
+.boardup {
+width: 600px;
 min-height: 100px;
+}
+
+
+.boardupLeft{
+    width: 100px;
+    min-height: 200px;
+    background-color: aqua;
+    float : left;
 
 }
+
+.boardupCenter{
+    width: 500px;
+    min-height: 200px;
+    background-color: red;
+    float: right;
+}
+.boardupBottom {
+    width: 600px;
+    height: 60px;
+    background-color: black;
+    
+    display: flex;
+}
+.boardupBottomLeft{
+    width: 450px;
+}
+
+.boardupBottomRight{
+    width: 150px;
+}
+
+.boardLeft{
+    width: 100px;
+    min-height: 200px;
+    background-color: aqua;
+    float : left;
+
+}
+
+.boardCenter{
+    width: 500px;
+    min-height: 200px;
+    background-color: rgb(214, 193, 193);
+    float: right;
+}
+.boardBottom {
+    width: 600px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+}
+
+
+
 
 .textform {
     min-width: 400px;
@@ -12,7 +64,8 @@ min-height: 100px;
     white-space: nowrap;
 }
 
-.btn2{
+.InputBoardBtn{
+    display: block;
     border: none;
     border-radius: 25px;
     font-size: 1rem;
@@ -23,6 +76,16 @@ min-height: 100px;
     cursor : pointer;
     background-color: rgb(22, 124, 241);
     min-width: 20%;
-    float: right;
     
+}
+
+
+.Inputboard{
+    font-size: 1rem;
+    border : none;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5rem;
+    outline: none;
+    margin-bottom: 0.5rem;
+    width: 450px;
 }

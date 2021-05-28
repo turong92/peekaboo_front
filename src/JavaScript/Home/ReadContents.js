@@ -61,14 +61,31 @@ class ReadContents extends Component {
         return(
             <div>
                 <div>
-                    <div className="board"> 
-                        <div><input className="email" label="text" name ="text" placeholder="게시글" type="text"/></div>
-                        <div><button className="btn2">트윗하기</button></div>
-                    </div>
-                    <div className="">
-                        {list}
+                    <div className="boardup"> 
+                        <div className="boardupLeft"></div>
+                        <div className="boardupCenter">
+                            <input className="InputBoard" label="text" name ="text" placeholder="게시글" type="text"/></div>
+                            <div ><span>게시글 공유 유형</span></div>
+                        <div className="boardupBottom">
+                            <div className="boardupBottomLeft"> boardBottom</div>
+                            <div className="boardupBottomRight"><button className="InputBoardBtn">트윗하기</button></div>
+                        </div>
                     </div>
                 </div>
+                    <div className="board">
+                        <div className="boardLeft"></div>
+                        <div className="boardCenter">
+                            {list}
+                        </div>
+                        <div className="boardBottom"></div>
+                    </div>
+                    <div className="board">
+                        <div className="boardLeft"></div>
+                        <div className="boardCenter">
+                            {list}
+                        </div>
+                        <div className="boardBottom"></div>
+                    </div>
             </div>
         );
     }
