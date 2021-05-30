@@ -77,23 +77,28 @@ class ReadContents extends Component {
                         </div>
                     </div>
                 </div>
-                    <div className="board">
-                        <div className="boardLeft"></div>
-                        <div className="boardCenter">
-                            {list}
-                        </div>
-                        <div className="boardBottom"></div>
-                    </div>
-                    <div className="board">
-                        <div className="boardLeft"></div>
-                        <div className="boardCenter">
-                            {list}
-                        </div>
-                        <div className="boardBottom"></div>
-                    </div>
+
             </div>
         );
     }
 }
 
 export default ReadContents;
+
+
+
+//                    <div className="board">
+//                        <div className="boardLeft"></div>
+//                        <div className="boardCenter">
+//                            {list}
+//                       </div>
+//                        <div className="boardBottom"></div>
+//                    </div>
+//                    <div className="board">
+//                        <div className="boardLeft"></div>
+//                        <div className="boardCenter">
+//                            {list}
+//                        </div>
+//                        <div className="boardBottom"></div>
+//                    </div>
+                    //

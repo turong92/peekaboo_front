@@ -1,6 +1,6 @@
 .aaa{
     width: 250px;
-    float:right;
+    float: right;
     margin-right: 20px;
     font-size: 20px;
     
@@ -13,6 +13,12 @@
     padding : 10px;
     margin-top: 10px;
     border: 1px solid;
+}
+svg {
+    fill: yellowgreen;
+    transition: .2s;
+    width: 40px;
+    height: 20px;
 }
 a:hover{
     background-color: rgb(44, 72, 230);

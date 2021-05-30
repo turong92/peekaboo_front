@@ -22,7 +22,7 @@ min-height: 100px;
     width: 500px;
     height: 160px;
     overflow: scroll;
-    
+    overflow-x: hidden;
     border: black solid 0.05rem ;
 }
 .Inputboard{
