@@ -64,10 +64,15 @@ class ReadContents extends Component {
                     <div className="boardup"> 
                         <div className="boardupLeft"></div>
                         <div className="boardupCenter">
-                            <input className="InputBoard" label="text" name ="text" placeholder="게시글" type="text"/></div>
-                            <div ><span>게시글 공유 유형</span></div>
+                            <div className="boardWrite" type="text" contentEditable="true" placeholder="게시글 입력">
+                            </div>
+                            <div className="read"></div>    
+                        </div>
+                        
                         <div className="boardupBottom">
-                            <div className="boardupBottomLeft"> boardBottom</div>
+                            <div className="boardupBottomLeft">
+                                <div role="button">이미지</div>
+                            </div>
                             <div className="boardupBottomRight"><button className="InputBoardBtn">트윗하기</button></div>
                         </div>
                     </div>

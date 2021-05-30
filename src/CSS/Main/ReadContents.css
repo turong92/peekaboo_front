@@ -5,24 +5,48 @@ min-height: 100px;
 
 
 .boardupLeft{
-    width: 100px;
+    width: 98px;
     min-height: 200px;
     background-color: aqua;
     float : left;
-
+    border: black solid 0.05rem ;
 }
 
 .boardupCenter{
     width: 500px;
     min-height: 200px;
-    background-color: red;
     float: right;
+}
+
+.boardWrite{
+    width: 500px;
+    height: 160px;
+    overflow: scroll;
+    
+    border: black solid 0.05rem ;
+}
+.Inputboard{
+    font-size: 1rem;
+    border : none;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5rem;
+    outline: none;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.read{
+    width: 500px;
+    height: 40px;
+    position: fixed;
+    display: flex;
+    border: black solid 0.05rem ;
 }
 .boardupBottom {
     width: 600px;
     height: 60px;
-    background-color: black;
     
+    border: black solid 0.05rem ;
     display: flex;
 }
 .boardupBottomLeft{
@@ -33,14 +57,16 @@ min-height: 100px;
     width: 150px;
 }
 
+.board{
+    width: 600px;
+    height: 300px;
+}
 .boardLeft{
     width: 100px;
     min-height: 200px;
     background-color: aqua;
     float : left;
-
 }
-
 .boardCenter{
     width: 500px;
     min-height: 200px;
@@ -76,16 +102,4 @@ min-height: 100px;
     cursor : pointer;
     background-color: rgb(22, 124, 241);
     min-width: 20%;
-    
-}
-
-
-.Inputboard{
-    font-size: 1rem;
-    border : none;
-    border-bottom: 1px solid;
-    padding-bottom: 0.5rem;
-    outline: none;
-    margin-bottom: 0.5rem;
-    width: 450px;
 }
