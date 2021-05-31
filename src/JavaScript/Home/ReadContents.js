@@ -68,10 +68,9 @@ class ReadContents extends Component {
                             </div>
                             <div className="read"></div>    
                         </div>
-                        
                         <div className="boardupBottom">
                             <div className="boardupBottomLeft">
-                                <div role="button">이미지</div>
+                                <div role="button"></div>
                             </div>
                             <div className="boardupBottomRight"><button className="InputBoardBtn">트윗하기</button></div>
                         </div>
