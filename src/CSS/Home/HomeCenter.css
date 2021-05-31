@@ -1,4 +1,9 @@
 .HomeCenter{
-    display:flex;
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: left;
     justify-content: center;
+
+    border: 1px solid;
 }

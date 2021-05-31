@@ -1,0 +1,67 @@
+
+.Main{
+    position: ablsolute;
+    left : 0;
+    top :0;
+    bottom: 0;
+    right: 0;
+    background: gray;
+    display: flex;
+    flex-direction :column;
+    justify-content :center;
+    align-items: center;
+}
+
+
+.email{
+    font-size: 1rem;
+    border : none;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5rem;
+    outline: none;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.loginform{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.025);
+    padding: 2rem;
+    width: 360px;
+    background: white;
+    border-radius: 2px;
+}
+
+.logintitle{
+    display: block;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.footer{
+    display: block;
+    margin-top : 2rem;
+    text-align: right;
+    float: right;
+}
+.footer a{
+ color: grey;
+ text-decoration: underline;
+ 
+}
+
+UiForm button {
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight : bold;
+    padding : 0.25rem 1rem;
+    outline : none;
+    cursor : pointer;
+}
+.btn1{
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    width: 100%;
+    font-size: 1.125rem;
+    background-color :rgb(209, 236, 52);
+}

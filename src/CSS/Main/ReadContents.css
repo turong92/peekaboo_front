@@ -1,0 +1,105 @@
+.boardup {
+width: 600px;
+min-height: 100px;
+}
+
+
+.boardupLeft{
+    width: 98px;
+    min-height: 200px;
+    background-color: aqua;
+    float : left;
+    border: black solid 0.05rem ;
+}
+
+.boardupCenter{
+    width: 500px;
+    min-height: 200px;
+    float: right;
+}
+
+.boardWrite{
+    width: 500px;
+    height: 160px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: black solid 0.05rem ;
+}
+.Inputboard{
+    font-size: 1rem;
+    border : none;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5rem;
+    outline: none;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.read{
+    width: 500px;
+    height: 40px;
+    position: fixed;
+    display: flex;
+    border: black solid 0.05rem ;
+}
+.boardupBottom {
+    width: 600px;
+    height: 60px;
+    
+    border: black solid 0.05rem ;
+    display: flex;
+}
+.boardupBottomLeft{
+    width: 450px;
+}
+
+.boardupBottomRight{
+    width: 150px;
+}
+
+.board{
+    width: 600px;
+    height: 300px;
+}
+.boardLeft{
+    width: 100px;
+    min-height: 200px;
+    background-color: aqua;
+    float : left;
+}
+.boardCenter{
+    width: 500px;
+    min-height: 200px;
+    background-color: rgb(214, 193, 193);
+    float: right;
+}
+.boardBottom {
+    width: 600px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+}
+
+
+
+
+.textform {
+    min-width: 400px;
+    min-height: 100px;
+    word-break:break-all;
+    white-space: nowrap;
+}
+
+.InputBoardBtn{
+    display: block;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight : bold;
+    padding : 0.5rem 2rem;
+    margin-top: 15px;
+    outline : none;
+    cursor : pointer;
+    background-color: rgb(22, 124, 241);
+    min-width: 20%;
+}
