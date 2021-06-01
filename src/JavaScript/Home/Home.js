@@ -9,8 +9,8 @@ class Home extends Component {
     return (
       <div className="Home">
           <HomeLeft></HomeLeft>
-          <HomeRight></HomeRight>
           <HomeCenter></HomeCenter>
+          <HomeRight></HomeRight>
       </div>
     );
   }

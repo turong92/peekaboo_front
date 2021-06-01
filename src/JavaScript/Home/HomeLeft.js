@@ -3,10 +3,13 @@ import "../../CSS/Home/HomeLeft.css";
 import Menu from "./Menu";
 
 class HomeLeft extends Component {
+
+
   render(){
     return (
       <div className="HomeLeft">
-          <Menu></Menu>
+          <Menu>
+          </Menu>
       </div>
     );
   }
