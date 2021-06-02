@@ -8,6 +8,7 @@ class ReadContents extends Component {
         this.state = {
             //contents:[]
             //아래 contents는 dummy입니다.
+            boardOpen:false,
             contents:[
                 {idx:1, id:"dummy1", insertTime:"2021-05-07", content:"12222222222222222222222222222333333333333333333333333333333333333333333333", viewCnt:999},
                 {idx:2, id:"dummy2", insertTime:"2021-05-06", content:"2 어엿비너겨", viewCnt:999},
@@ -15,6 +16,11 @@ class ReadContents extends Component {
             ]
         }
     }
+
+    openBoard = () => {
+        this.setState({ boardOpen:true })
+    }
+
 
     getContentsFromDB = async () => {
         axios.post("/read-home-contents")
@@ -72,7 +78,7 @@ class ReadContents extends Component {
                             <div className="boardupBottomLeft">
                                 <div role="button"></div>
                             </div>
-                            <div className="boardupBottomRight"><button className="InputBoardBtn">트윗하기</button></div>
+                            <div className="boardupBottomRight"><button className="InputBoardBtn" ocClick={this.openBoard}>트윗하기</button></div>
                         </div>
                     </div>
                 </div>

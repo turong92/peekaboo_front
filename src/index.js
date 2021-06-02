@@ -3,19 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Main from './JavaScript/Main/Main';
 import Home from './JavaScript/Home/Home';
-import Login from './JavaScript/User/Login';
-import Signup from './JavaScript/User/Signup';
-
 import {HashRouter, Route, Switch} from 'react-router-dom';
+import Login from './JavaScript/User/Login';
 
 function App(){
   return(
     <div>
       <Switch>
          <Route exact path="/"><Main></Main></Route>
-         <Route path="/home"><Home></Home></Route>
+         <Route path="/home"><Home></Home></Route>  
          <Route path="/login"><Login></Login></Route>
-         <Route path="/signup"><Signup></Signup></Route>
          <Route path="/">Not Found</Route>
        </Switch>
     </div>
