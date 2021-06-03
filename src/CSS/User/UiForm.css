@@ -58,6 +58,14 @@
     background-color: #FEE500;
 }
 
+
+.snslogin > a {
+    font-size : 1.1rem;
+    line-height: 40px;
+    color: black;
+}
+
+
 .loginbtn {
     border: none;
     border-radius: 4px;
