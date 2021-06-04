@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import "../../CSS/Home/Menu.css";
+import LayerPopup from './Modal/LayerPopup';
 import Modal from './Modal/Modal';
 
 class Menu extends Component {
@@ -9,6 +10,7 @@ class Menu extends Component {
         super(props);
         this.state = {
             modalOpen:false,
+            LayerPopup:false,
         }
     }
     openModal = () => {
@@ -16,6 +18,12 @@ class Menu extends Component {
     }
     closeModal = () => {
         this.setState({ modalOpen:false})
+    }
+    openLayerPopup = () => {
+        this.setState({ LayerPopup:true})
+    }
+    closeLayerPopup = () => {
+        this.setState({ LayerPopup:false})
     }
 
 
@@ -60,16 +68,21 @@ class Menu extends Component {
                             <div className="boardupBottomLeft">
                                 <div role="button"></div>
                             </div>
-                            <div className="boardupBottomRight"><button className="InputBoardBtn">트윗하기</button></div>
                         </div>
                      </div>
                     </Modal>
-                </div>
+                    </div>
                 <div className="blank">
                     
                 </div>
                 <div className="UserMenu">
-                    유저 정보
+                    <button className="BtnLeft" onClick={this.openLayerPopup}><span>내정보</span></button>
+                        <LayerPopup open = {this.state.LayerPopup} close= {this.closeLayerPopup}>
+                            <div style="x">
+                            <p>111111</p>
+                            <p2>22222</p2>
+                            </div>
+                        </LayerPopup>
                 </div>
             </div>
             </div>
