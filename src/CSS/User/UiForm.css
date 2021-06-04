@@ -28,6 +28,7 @@
     text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
+    height: 70px;
 }
 
 .snslogin{
@@ -55,8 +56,14 @@
     background-color: #00C43B ;
 }
 .kakaobtn{
-    background-color: #FEE500;
+    background-color: #FEE500;    
 }
+.snslogin > a {
+    font-size : 1.1rem;
+    line-height: 40px;
+    color: black;
+}
+
 
 .loginbtn {
     border: none;

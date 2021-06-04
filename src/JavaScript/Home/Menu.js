@@ -78,7 +78,7 @@ class Menu extends Component {
                 <div className="UserMenu">
                     <button className="BtnLeft" onClick={this.openLayerPopup}><span>내정보</span></button>
                         <LayerPopup open = {this.state.LayerPopup} close= {this.closeLayerPopup}>
-                            <div style="x">
+                            <div>
                             <p>111111</p>
                             <p2>22222</p2>
                             </div>
