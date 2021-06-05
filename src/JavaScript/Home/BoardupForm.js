@@ -41,11 +41,11 @@ class BoardupForm extends Component {
           </div>
           <div className="boardupBottom">
             <div className="boardupBottomLeft">
-            <div role="button"></div>
-          </div>
-            <div className="boardupBottomRight"><button className="InputBoardBtn" type="submit" ocClick={this.openBoard}>트윗하기</button></div>
+              <div role="button"></div>
             </div>
-          </form>
+            <div className="boardupBottomRight"><button className="InputBoardBtn" type="submit" ocClick={this.openBoard}>트윗하기</button></div>
+          </div>
+        </form>
 
       </div>
     );
