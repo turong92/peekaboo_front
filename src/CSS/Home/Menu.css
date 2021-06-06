@@ -108,6 +108,10 @@ span {
     animation: modal-bg-show .3s;
 }
 
+.Popup > li {
+    list-style: none;
+}
+
 
 
 @keyframes modal-show {

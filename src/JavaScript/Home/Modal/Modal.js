@@ -17,7 +17,21 @@ class Modal extends Component {
                             <button className="close" onClick={close}> &times; </button>
                         </header>
                         <main>
-                            {this.props.children}
+                            <form className="boardup"> 
+                                <div className="boardupLeft"></div>
+                                <div className="boardupCenter">
+                                <div className="boardWrite" type="text" contentEditable="true" placeholder="게시글 입력">
+                                </div>
+                                <div className="read"></div>    
+                            </div>
+                                <div className="boardupBottom">
+                                    <div className="boardupBottomLeft">
+                                    <div role="button"></div>
+                                </div>
+                            
+                            <div className="boardupBottomRight"><button className="InputBoardBtn" type="submit" ocClick={this.openBoard}>트윗하기</button></div>
+                            </div>
+                            </form>
                         </main>
                     </section>
                 ) : null }

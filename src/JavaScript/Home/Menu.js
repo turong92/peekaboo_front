@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import "../../CSS/Home/Menu.css";
-import LayerPopup from './Modal/LayerPopup';
 import Modal from './Modal/Modal';
+import Popup from './Modal/Popup';
+import BoardupForm from './BoardupForm.js'
 
 class Menu extends Component {
   
@@ -10,20 +11,25 @@ class Menu extends Component {
         super(props);
         this.state = {
             modalOpen:false,
-            LayerPopup:false,
-        }
+            popupOpen:false,
+            
+        };
     }
+    // React에서 Component를 생성할 때 state 값을 초기화하거나 메서드를 바인딩할 때 construcotr()를 사용
+    // React.Component를 상속한 컴포넌트의 생성자를 구현할 때는 super(props)를 선언을 권고하고 있습니다.
+    // 이유는 this.props 사용 시 생성자 내에서 정의되지 않아 버그 발생 가능성이 생기기 때문입니다.
     openModal = () => {
         this.setState({ modalOpen:true})
     }
     closeModal = () => {
         this.setState({ modalOpen:false})
     }
-    openLayerPopup = () => {
-        this.setState({ LayerPopup:true})
+
+    openPopup = () => {
+        this.setState({ popupOpen:true})
     }
-    closeLayerPopup = () => {
-        this.setState({ LayerPopup:false})
+    closePopup = () => {
+        this.setState({ popupOpen:false})
     }
 
 
@@ -57,32 +63,19 @@ class Menu extends Component {
                 <div className="BtnDiv">
                     <button className="BtnLeft" onClick={this.openModal}><span>트윗하기</span></button>
                     <Modal open = { this.state.modalOpen } close = { this.closeModal }>
-                     <div className="boardup"> 
-                        <div className="boardupLeft"></div>
-                        <div className="boardupCenter">
-                            <div className="boardWrite" type="text" contentEditable="true" placeholder="게시글 입력">
-                            </div>
-                            <div className="read"></div>    
-                        </div>
-                        <div className="boardupBottom">
-                            <div className="boardupBottomLeft">
-                                <div role="button"></div>
-                            </div>
-                        </div>
-                     </div>
+                         
                     </Modal>
                     </div>
                 <div className="blank">
                     
                 </div>
                 <div className="UserMenu">
-                    <button className="BtnLeft" onClick={this.openLayerPopup}><span>내정보</span></button>
-                        <LayerPopup open = {this.state.LayerPopup} close= {this.closeLayerPopup}>
-                            <div>
-                            <p>111111</p>
-                            <p2>22222</p2>
-                            </div>
-                        </LayerPopup>
+                    <button className="BtnLeft" onClick={this.openPopup}><span>내정보</span></button>
+                    <Popup open = {this.state.popupOpen } close = {this.closePopup }>
+                        <div className="">
+                            <h1><p>111111</p></h1>
+                        </div>
+                    </Popup>
                 </div>
             </div>
             </div>
