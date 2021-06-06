@@ -17,11 +17,14 @@
 svg {
     fill: yellowgreen;
     transition: .2s;
-    width: 40px;
-    height: 20px;
+    width: 20px;
+    height: 35px;
+    float: left;
+    margin-left: 20px;
 }
 .Navlink > a:hover{
     background-color: rgb(211, 138, 240);
+    border-radius: 0.5rem;
 
 }
 
@@ -44,7 +47,6 @@ span {
 }
 
 .UserMenu{
-
     bottom : 10px;
     border: 1px solid;
     min-height: 40px;

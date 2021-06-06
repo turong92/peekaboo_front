@@ -21,7 +21,9 @@ class BoardupForm extends Component {
     // 상태 초기화
     this.setState({
       idx: '',
+      // idx = idx+1
       id: '',
+      // 
       insertTime:'',
       content:'',
       viewCnt:''
@@ -39,11 +41,12 @@ class BoardupForm extends Component {
           </div>
           <div className="boardupBottom">
             <div className="boardupBottomLeft">
-            <div role="button"></div>
-          </div>
-            <div className="boardupBottomRight"><button className="InputBoardBtn" type="submit" ocClick={this.openBoard}>트윗하기</button></div>
+              <div role="button"></div>
             </div>
-          </form>
+            <div className="boardupBottomRight"><button className="InputBoardBtn" type="submit" ocClick={this.openBoard}>트윗하기</button></div>
+          </div>
+        </form>
+
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import "../../CSS/Main/ReadContents.css";
 import BoardupForm from './BoardupForm.js'
+import BoardForm from './BoardForm';
 
 
 class ReadContents extends Component {
@@ -10,6 +11,9 @@ class ReadContents extends Component {
         this.state = {
             //contents:[]
             //아래 contents는 dummy입니다.
+            
+            idx :'',
+            id: '',
             contents:[
                 {idx:1, id:"dummy1", insertTime:"2021-05-07", content:"12222222222222222222222222222333333333333333333333333333333333333333333333", viewCnt:999},
                 {idx:2, id:"dummy2", insertTime:"2021-05-06", content:"2 어엿비너겨", viewCnt:999},
@@ -68,8 +72,13 @@ class ReadContents extends Component {
 
         return(
             <div>
+                <div><h1>홈</h1>
+                </div>
                 <div>
                     <BoardupForm onCreate={this.handleCreate}/>
+                </div>
+                <div>
+                    <BoardForm/>
                 </div>
             </div>
         );
