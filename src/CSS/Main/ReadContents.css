@@ -1,6 +1,7 @@
 .boardup {
 width: 600px;
 min-height: 100px;
+margin-bottom: 30px;
 }
 
 
@@ -63,20 +64,29 @@ min-height: 100px;
 }
 .boardLeft{
     width: 100px;
-    min-height: 200px;
+    min-height: 150px;
     background-color: aqua;
     float : left;
 }
 .boardCenter{
     width: 500px;
-    min-height: 200px;
+    min-height: 100px;
     background-color: rgb(214, 193, 193);
     float: right;
 }
+.boardCenterHeadLeft{
+    width: 500px;
+}
+.moreview{
+    width: 100px;
+    float: right;
+    
+}
+
+
 .boardBottom {
     width: 600px;
     height: 60px;
-    background-color: black;
     display: flex;
 }
 

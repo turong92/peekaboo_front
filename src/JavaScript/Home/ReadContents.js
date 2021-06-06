@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import "../../CSS/Main/ReadContents.css";
 import BoardupForm from './BoardupForm.js'
+import BoardForm from './BoardForm';
 
 
 class ReadContents extends Component {
@@ -71,8 +72,13 @@ class ReadContents extends Component {
 
         return(
             <div>
+                <div><h1>홈</h1>
+                </div>
                 <div>
                     <BoardupForm onCreate={this.handleCreate}/>
+                </div>
+                <div>
+                    <BoardForm/>
                 </div>
             </div>
         );

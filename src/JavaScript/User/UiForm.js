@@ -2,10 +2,10 @@ import { render } from '@testing-library/react';
 import React, { Component, useState } from 'react';
 import "../../CSS/User/UiForm.css";
 import {Link, } from 'react-router-dom';
-import imgNaver from "../../Img/naver.png";
-import imgKakao from "../../Img/kakao.png";
-import imgGoogle from "../../Img/google.svg";
-import imgfacebook from "../../Img/facebook.png";
+import imgNaver from "../../Img/sns/naver.png";
+import imgKakao from "../../Img/sns/kakao.png";
+import imgGoogle from "../../Img/sns/google.svg";
+import imgfacebook from "../../Img/sns/facebook.png";
 
 class UiForm extends Component {
 
