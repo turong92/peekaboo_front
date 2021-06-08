@@ -1,30 +1,36 @@
+
+.Hometitle{
+    width: 600px;
+    height: 50px;
+}
 .boardup {
-width: 600px;
-min-height: 100px;
-margin-bottom: 30px;
+    width: 600px;
+    min-height: 267px;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
-
 .boardupLeft{
-    width: 98px;
-    min-height: 200px;
+    width: 99px;
+    min-height: 267px;
     background-color: aqua;
     float : left;
-    border: black solid 0.05rem ;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .boardupCenter{
     width: 500px;
-    min-height: 200px;
+    min-height: 267px;
     float: right;
 }
 
-.boardWrite{
+.boardupWrite{
     width: 500px;
     height: 160px;
     overflow: scroll;
     overflow-x: hidden;
-    border: black solid 0.05rem ;
+    border-collapse: collapse;
 }
 .Inputboard{
     font-size: 1rem;
@@ -36,22 +42,36 @@ margin-bottom: 30px;
     word-wrap: break-word;
     word-break: break-all;
 }
-.read{
+.boardupread{
     width: 500px;
     height: 40px;
-    position: fixed;
     display: flex;
-    border: black solid 0.05rem ;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.boardupread span{
+    color: black;
 }
 .boardupBottom {
-    width: 600px;
+    width: 500px;
     height: 60px;
-    
-    border: black solid 0.05rem ;
+    border-collapse: collapse;
     display: flex;
 }
+.boardup svg {
+    fill: rgba(29,161,242,1.00);
+    transition: .2s;
+    width: 22px;
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 50%;
+    margin-top: 4px;
+    
+}
 .boardupBottomLeft{
-    width: 450px;
+    width: 400px;
 }
 
 .boardupBottomRight{
@@ -60,39 +80,72 @@ margin-bottom: 30px;
 
 .board{
     width: 600px;
-    height: 300px;
+    min-height: 200px;
+    display: flex;
+    margin-top: 10px;
+    
+    border: 1px black solid;
 }
 .boardLeft{
     width: 100px;
-    min-height: 150px;
-    background-color: aqua;
+    min-height: 200px;
     float : left;
+    border-right: 1px black solid;
 }
+
 .boardCenter{
     width: 500px;
     min-height: 100px;
-    background-color: rgb(214, 193, 193);
     float: right;
+    
 }
 .boardCenterHeadLeft{
     width: 500px;
+    height: 25px;
+    
+    border-bottom: 1px black solid;
 }
+
 .moreview{
     width: 100px;
     float: right;
     
 }
 
-
 .boardBottom {
-    width: 600px;
-    height: 60px;
+    width: 500px;
+    height: 45px;
     display: flex;
+    
+    border-top: 1px black solid;
 }
 
 
+.board svg {
+    fill: rgba(29,161,242,1.00);
+    transition: .2s;
+    width: 22px;
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 50%;
+    margin-top: 4px;
+    
+}
+.boardbtn{
+    width: 40px;
+    height: 45px;
+}
 
-
+.boardbtn :hover{
+    background-color: rgb(192, 234, 245);
+    border-radius: 50%;
+    
+}
+.blank2{
+    width: 45px;
+}
 .textform {
     min-width: 400px;
     min-height: 100px;

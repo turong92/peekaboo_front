@@ -1,0 +1,39 @@
+.menuNav{
+    width: 350px;
+
+}
+
+.form2 {
+    width: 300px;
+    height: 65px;
+    background-color: aqua;
+    position: fixed;
+    border-radius: 10px;
+}
+
+.form3{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(68, 150, 150);
+    display: flex;
+    margin-top: 80px;
+    
+    border-radius: 10px;
+}
+
+.form4 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(156, 77, 152);
+    border-radius: 10px;
+    margin-top: 20px
+}
+
+.form5 {
+    
+    width: 300px;
+    height: 300px;
+    background-color: rgb(104, 161, 70);
+    
+    border-radius: 10px;
+}

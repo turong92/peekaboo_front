@@ -68,14 +68,17 @@ class ReadContents extends Component {
         
         var list = this.makeContentsList();
         console.log("render", list);
-        
+       
 
         return(
-            <div>
-                <div><h1>홈</h1>
+            <div className="Home">
+                <div className="Hometitle"><h1>홈</h1>
                 </div>
                 <div>
                     <BoardupForm onCreate={this.handleCreate}/>
+                </div>
+                <div>
+                    <BoardForm/>
                 </div>
                 <div>
                     <BoardForm/>
