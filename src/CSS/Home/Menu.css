@@ -1,9 +1,11 @@
-.aaa{
+.menutotal{
     width: 250px;
     float: right;
     margin-right: 20px;
-    font-size: 20px;
-    
+    margin-top: -10px;
+}
+.menudiv{
+    margin-left: 8px;
 }
 .menuNav{
     padding : 0.5rem;
@@ -12,23 +14,36 @@
 .Navlink{
     padding : 10px;
     margin-top: 10px;
-    border: 1px solid;
+    width : 230px;
+    height: 30px;
 }
-svg {
-    fill: yellowgreen;
+.Navlink > a {
+    float : left;
+    font-size: 1.5rem;
+}
+.Navlink svg {
+    fill: rgba(29,161,242,1.00);
     transition: .2s;
-    width: 20px;
-    height: 35px;
+    width: 22px;
+    height: 25px;
     float: left;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 50%;
+    margin-top: 4px;
 }
 .Navlink > a:hover{
-    background-color: rgb(211, 138, 240);
+    background-color: rgb(192, 234, 245);
     border-radius: 0.5rem;
 
 }
-
+.Navlink > a:active{
+    background-color: rgb(192, 234, 245);
+    border-radius: 0.5rem;
+}
 .BtnLeft {
+    width: 240px;
+    height: 50px;
     border: none;
     border-radius: 25px;
     font-size: 1rem;
@@ -40,20 +55,14 @@ svg {
     min-width: 70%;
     margin-top: 30px;
 }
-
 span {
     color: aliceblue;
     font-size: 20px;
 }
-
 .UserMenu{
     bottom : 10px;
-    border: 1px solid;
     min-height: 40px;
 }
-
-
-
 .modal {
     display: none;
     position: fixed;
@@ -107,6 +116,11 @@ span {
     /* 팝업이 열릴때 스르륵 열리는 효과 */
     animation: modal-bg-show .3s;
 }
+
+.Popup > li {
+    list-style: none;
+}
+
 @keyframes modal-show {
     from {
         opacity: 0;
