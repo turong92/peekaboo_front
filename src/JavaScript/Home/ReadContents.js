@@ -72,10 +72,18 @@ class ReadContents extends Component {
 
         return(
             <div className="Home">
-                <div className="Hometitle"><h1>홈</h1>
+                <div className="Hometitle">
+                    <div className=""><h1>홈 <button className="BtnHome">dd</button></h1></div>
+                    <div></div>
                 </div>
                 <div>
                     <BoardupForm onCreate={this.handleCreate}/>
+                </div>
+                <div>
+                    <BoardForm/>
+                </div>
+                <div>
+                    <BoardForm/>
                 </div>
                 <div>
                     <BoardForm/>
