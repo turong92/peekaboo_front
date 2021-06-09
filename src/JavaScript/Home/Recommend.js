@@ -7,7 +7,11 @@ class Recommend extends Component {
         return(
             <nav className="menuNav">
                 <form className="form2">
-                    <div><input value="" type="text" placeholder="트위터 검색"></input></div>
+                    <div className="searchbar">
+                        <div className="searchLeft"></div>
+                        <input className="searchCenter" value="" type="text" placeholder="트위터 검색"></input>
+                        <div className="searchRight"></div>
+                    </div>
                 </form>
                 <form className="form3">
                   <div><NavLink to="/">나를 위한 트렌드</NavLink></div>
