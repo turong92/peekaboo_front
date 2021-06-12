@@ -139,3 +139,20 @@ span {
         opacity: 1;
     }
 }
+
+
+
+.profile{
+    width: 250px;
+    height: 150px;
+    background-color: aquamarine;
+    border: 0 solid black;
+    top : 450px;
+    bottom : 400px;
+    left: 400px;
+}
+
+.profile li{
+    list-style: none;
+    padding-left: 0px;
+}

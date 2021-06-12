@@ -29,6 +29,17 @@
     top: 90px;
 }
 
+
+
+.boardup2 {
+    width: 600px;
+    min-height: 267px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: relative;
+}
+
+
 .boardupLeft{
     width: 99px;
     min-height: 267px;
