@@ -4,15 +4,30 @@ import './index.css';
 import Main from './JavaScript/Main/Main';
 import Home from './JavaScript/Home/Home';
 import Login from './JavaScript/User/Login';
+import Auth from './hoc/auth';
+
+import reducer from "./reducers";
+
 import {HashRouter, Route, Switch} from 'react-router-dom';
+import { Provider } from "react-redux";
+import { applyMiddleware, createStore } from "redux";
+import promiseMiddlerware from "redux-promise";
+import reduxThunk from "redux-thunk";
+
+
+const createStoreWidthMiddleware = applyMiddleware(
+  promiseMiddlerware,
+  reduxThunk
+)(createStore);
+
 
 function App(){
   return(
     <div>
       <Switch>
-         <Route exact path="/"><Main></Main></Route>
-         <Route path="/home"><Home></Home></Route>
-         <Route path="/login"><Login></Login></Route>
+         <Route exact path="/" component={Main} />
+         <Route path="/home" component={Home} />
+         <Route path="/login" component={Login} />
          <Route path="/">Not Found</Route>
        </Switch>
     </div>
@@ -20,9 +35,19 @@ function App(){
 }
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+  <React.StrictMode>
+    <Provider
+      store={createStoreWidthMiddleware(
+        reducer,
+        //개발자 도구를 사용하기 위한 설정
+        window.__REDUX_DEVTOOLS_EXTENSION__ &&
+          window.__REDUX_DEVTOOLS_EXTENSION__()
+      )}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
