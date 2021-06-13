@@ -25,9 +25,9 @@ render(){
                         <div className="loginbtn">
                             <a href="http://localhost:8080/oauth2/authorization/google" className="btn2" role="button">Google Login</a></div>
                         <div className="loginbtn">
-                            <a href="http://localhost:8080/oauth2/authorization/google" className="" role="button">Naver Login</a></div>
+                            <a href="http://localhost:8080/oauth2/authorization/naver" className="" role="button">Naver Login</a></div>
                         <div className="loginbtn">
-                            <a href="http://localhost:8080/oauth2/authorization/google" className="btn4 btn-success active" role="button">Kakao Login</a></div>
+                            <a href="http://localhost:8080/oauth2/authorization/kakao" className="btn4 btn-success active" role="button">Kakao Login</a></div>
                     </form>
                     <footer>
                         푸터 영역

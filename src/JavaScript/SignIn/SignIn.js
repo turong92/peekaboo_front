@@ -4,16 +4,22 @@ import React, { Component } from 'react';
 class SignIn extends Component {
     constructor(props){
         super(props);
+
         this.state = {
-            id:null
+            userId:null,
+            userName:null
         }
     }
 
     componentDidMount(){
-        axios.post("/get-my-id")
+        axios.post("/principalDetails")
         .then(response => {
             console.log(response);
-            this.setState({id:response.data});
+            this.setState({userId:response.data.userId,
+                            userName:response.data.userName});
+            const { userId, userName } = this.state;
+            window.sessionStorage.setItem('userId', userId);
+            window.sessionStorage.setItem('userName', userName);
         })
         .catch(e => {
             console.log(e);
@@ -31,13 +37,16 @@ class SignIn extends Component {
     }
 
     render(){
-        var _id = "";
-        if(this.state.id !== null){
-            _id = this.state.id;
+        var _userId = "";
+        var _userName = "";
+        if(this.state.userId !== null && this.state.userName != null){
+            _userId = this.state.userId;
+            _userName = this.state.userName;
         }
         return(
             <div>
-                ID : {_id}
+                ID : {_userId}
+                Name : {_userName}
                 <a href="http://localhost:8080/oauth2/authorization/google" className="btn btn-success active" 
                 role="button">Google Login</a>
                 <input type="button" value="test" onClick={this.testFunction}></input>
