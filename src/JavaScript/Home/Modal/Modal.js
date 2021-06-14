@@ -16,7 +16,7 @@ class Modal extends Component {
                             { header }
                             <button className="close" onClick={close}> &times; </button>
                         </header>
-                        <main>                            
+                        <main>
                             <form className="boardup2"> 
                                 <div className="boardupLeft"></div>
                                 <div className="boardupCenter">
