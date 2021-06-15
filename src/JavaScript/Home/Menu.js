@@ -74,9 +74,6 @@ class Menu extends Component {
                 <div className="UserMenu">
                     <button className="BtnLeft" onClick={this.openPopup}><span>내정보</span></button>
                     <Popup open = {this.state.popupOpen } close = {this.closePopup }>
-                        <div className="">
-                            <h1><p>111111</p></h1>
-                        </div>
                     </Popup>
                 </div>
             </div>

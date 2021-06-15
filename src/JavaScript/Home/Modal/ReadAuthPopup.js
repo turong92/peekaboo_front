@@ -9,10 +9,14 @@ class ReadAuthPopup extends Component {
         const { open, close, header } = this.props;
 
         return (
-            <div className={ open ? 'openReadAuthPopup ReadAuthpopup': 'ReadAuthpopup' }>
+            <div className={ open ? 'openReadPopup ReadAuthpopup': 'ReadAuthpopup' }>
                 { open ? (  
                     <div>
                         <div className="Authform">
+                            <header>
+                                { header }
+                            <button className="close" onClick={close}> &times; </button>
+                            </header>
                             <div className="Authtitle">
                                 <h4><span>답글을 달 수 있는 사람</span></h4>
                                 <h6>이 트윗에 답글을 달 수 있는 사람을 선택하세요. 멘션된 사람은 누구든지 답글을 달 수 있습니다.</h6>

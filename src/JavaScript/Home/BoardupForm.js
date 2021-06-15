@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import ReadAuthPopup from '../../JavaScript/Home/Modal/ReadAuthPopup';
 
 class BoardupForm extends Component {
+
   state = {
     idx: '1',
     id: '',
     insertTime:'',
     content:'',
     viewCnt:'',
+    readAuth:'0',
   }
   handleChange = (e) => {
     this.setState({
@@ -30,6 +32,15 @@ class BoardupForm extends Component {
       viewCnt:'',
     })
   }
+  openReadPopup = () => {
+    this.setState({ readAuthOpen:true})
+  }
+  closeReadPopup = () => {
+    this.setState({ readAuthOpen:false})
+  }
+
+
+
   render() {
     const readAuth = 0;
     return (
@@ -38,10 +49,10 @@ class BoardupForm extends Component {
           <div className="boardupLeft">
           </div>
           <div className="boardupCenter">
-            <textarea className="boardupWrite" type="text" contenteditable="true"  placeholder= "여기에 글자를 입력해주세요." value={this.state.content} onChange={this.handleChange} name="content">
+            <textarea className="boardupWrite" type="text" contentEditable="true"  placeholder= "여기에 글자를 입력해주세요." value={this.state.content} onChange={this.handleChange} name="content">
             </textarea>
             <div className="boardupread">
-              <button className="authbtn">
+              <button className="authbtn" onClick={this.openReadPopup}>
                 {
                   {
                     0 : <span>  [읽는 권한 : 모두][readAuth : {readAuth}] </span>,
@@ -70,3 +81,4 @@ class BoardupForm extends Component {
 }
 export default BoardupForm;
 
+// <ReadAuthPopup open = {this.state.readAuthOpen } close = {this.closeReadPopup}></ReadAuthPopup>

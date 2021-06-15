@@ -92,9 +92,15 @@
 .authbtn :hover{
     background-color: rgb(187, 220, 241);
     border-radius: 15px;
-    padding :3px;
     cursor : pointer;
 }
+.Authform {
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    border: 1px black solid;
+}
+
 .boardupBottom {
     width: 500px;
     height: 60px;

@@ -12,6 +12,10 @@ class Popup extends Component {
             <div className={ open ? 'openPopup popup': 'popup' }>
                 { open ? (  
                     <div>
+                        <header>
+                            { header }
+                            <button className="close" onClick={close}> &times; </button>
+                        </header>
                         <div className="profile">
                             <li><div>계정 이미지 , 이해준</div></li>
                             <div><a href="">기존 계정 추가</a></div>
