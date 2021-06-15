@@ -1,18 +1,20 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Provider, useDispatch } from "react-redux";
+import { applyMiddleware, createStore } from "redux";
+import promiseMiddlerware from "redux-promise";
+import reduxThunk from "redux-thunk";
+
 import './index.css';
 import Main from './JavaScript/Main/Main';
 import Home from './JavaScript/Home/Home';
 import Login from './JavaScript/User/Login';
+import LoginProcess from './JavaScript/User/loginProcess';
 import Auth from './hoc/auth';
 
 import reducer from "./reducers";
-
-import {HashRouter, Route, Switch} from 'react-router-dom';
-import { Provider } from "react-redux";
-import { applyMiddleware, createStore } from "redux";
-import promiseMiddlerware from "redux-promise";
-import reduxThunk from "redux-thunk";
+import * as userActions from './actions/userAction';
 
 
 const createStoreWidthMiddleware = applyMiddleware(
@@ -22,20 +24,28 @@ const createStoreWidthMiddleware = applyMiddleware(
 
 
 function App(){
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const userInfo = { userId:window.localStorage.getItem("userId"),
+                        userName:window.localStorage.getItem("userName")};
+    if(userInfo.userId === null) return;
+    dispatch(userActions.loginUser(userInfo));
+  })
+
   return(
     <div>
       <Switch>
-         <Route exact path="/" component={Main} />
-         <Route path="/home" component={Home} />
-         <Route path="/login" component={Login} />
-         <Route path="/">Not Found</Route>
+        <Route exact path="/" component={Auth(Main, null)} />
+        <Route exact path="/home" component={Auth(Home, true)} />
+        <Route exact path="/login" component={Auth(Login, false)} />
+        <Route exact path="/loginProcess" component={Auth(LoginProcess, false)} />
        </Switch>
     </div>
   )
 }
 
 ReactDOM.render(
-  <React.StrictMode>
     <Provider
       store={createStoreWidthMiddleware(
         reducer,
@@ -43,15 +53,19 @@ ReactDOM.render(
         window.__REDUX_DEVTOOLS_EXTENSION__ &&
           window.__REDUX_DEVTOOLS_EXTENSION__()
       )}>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </Provider>
-  </React.StrictMode>,
+      <Router>
+        <App />
+      </Router>
+    </Provider>,
   document.getElementById('root')
 );
 
-
+/*
+<Route exact path="/" component={Main} />
+         <Route path="/home" component={Home} />
+         <Route path="/login" component={Login} />
+         <Route path="/">Not Found</Route>
+*/
 
 
 
