@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import ReadAuthPopup from '../../JavaScript/Home/Modal/ReadAuthPopup';
 
 class BoardupForm extends Component {
+
   state = {
-    idx: '',
+    idx: '1',
     id: '',
     insertTime:'',
     content:'',
-    viewCnt:''
+    viewCnt:'',
+    readAuth:'0',
   }
   handleChange = (e) => {
     this.setState({
@@ -26,20 +29,38 @@ class BoardupForm extends Component {
       // 
       insertTime:'',
       content:'',
-      viewCnt:''
+      viewCnt:'',
     })
   }
+  openReadPopup = () => {
+    this.setState({ readAuthOpen:true})
+  }
+  closeReadPopup = () => {
+    this.setState({ readAuthOpen:false})
+  }
+
+
+
   render() {
+    const readAuth = 0;
     return (
       <div>
         <form className="boardup" onSubmit={this.handleSubmit}> 
           <div className="boardupLeft">
           </div>
           <div className="boardupCenter">
-            <div className="boardupWrite" type="text" contentEditable="true" placeholder="게시글 입력" value={this.state.content} onChange={this.handleChange} name="content">
-            </div>
+            <textarea className="boardupWrite" type="text" contentEditable="true"  placeholder= "여기에 글자를 입력해주세요." value={this.state.content} onChange={this.handleChange} name="content">
+            </textarea>
             <div className="boardupread">
-              <span>누구에게 보여줄지 권한</span>  
+              <button className="authbtn" onClick={this.openReadPopup}>
+                {
+                  {
+                    0 : <span>  [읽는 권한 : 모두][readAuth : {readAuth}] </span>,
+                    1 : <span>  [읽는 권한 : 팔로우한사람][readAuth] : {readAuth}] </span>,
+                    2 : <span>  [읽는 권한 : 멘션 한사람][readAuth : {readAuth}] </span>
+                  } [readAuth]
+                }
+              </button>  
             </div>
             <div className="boardupBottom">
               <div className="boardupBottomLeft">
@@ -54,10 +75,10 @@ class BoardupForm extends Component {
             </div>  
           </div>
         </form>
-
       </div>
     );
   }
 }
 export default BoardupForm;
 
+// <ReadAuthPopup open = {this.state.readAuthOpen } close = {this.closeReadPopup}></ReadAuthPopup>
