@@ -1,29 +1,66 @@
+
+.Hometitle{
+    width: 600px;
+    height: 65px;
+    position: fixed;
+    background-color: aquamarine;
+   
+}
+
+.BtnHome{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight : bold;
+    padding : 0.5rem 2rem;
+    outline : none;
+    cursor : pointer;
+    float: right;
+}
+
 .boardup {
-width: 600px;
-min-height: 100px;
+    width: 600px;
+    min-height: 267px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: relative;
+    top: 90px;
+}
+
+.boardup2 {
+    width: 600px;
+    min-height: 267px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: relative;
 }
 
 
 .boardupLeft{
-    width: 98px;
-    min-height: 200px;
+    width: 99px;
+    min-height: 267px;
     background-color: aqua;
     float : left;
-    border: black solid 0.05rem ;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .boardupCenter{
     width: 500px;
-    min-height: 200px;
+    min-height: 267px;
     float: right;
 }
 
-.boardWrite{
+.boardupWrite{
     width: 500px;
     height: 160px;
-    overflow: scroll;
-    overflow-x: hidden;
-    border: black solid 0.05rem ;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    resize: none;
+    font-size: 15px;
 }
 .Inputboard{
     font-size: 1rem;
@@ -35,54 +72,130 @@ min-height: 100px;
     word-wrap: break-word;
     word-break: break-all;
 }
-.read{
+.boardupread{
     width: 500px;
     height: 40px;
-    position: fixed;
     display: flex;
-    border: black solid 0.05rem ;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
+.boardupread span{
+    color: black;
+}
+.authbtn{
+    background-color: rgb(255,255,255);
+    border: 1px;
+}
+.authbtn span{
+    color: rgba(29,161,242,1.00);
+}
+.authbtn :hover{
+    background-color: rgb(187, 220, 241);
+    border-radius: 15px;
+    cursor : pointer;
+}
+.Authform {
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    border: 1px black solid;
+}
+
 .boardupBottom {
-    width: 600px;
+    width: 500px;
     height: 60px;
-    
-    border: black solid 0.05rem ;
+    border-collapse: collapse;
     display: flex;
+}
+.boardup svg {
+    fill: rgba(29,161,242,1.00);
+    transition: .2s;
+    width: 22px;
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 50%;
+    margin-top: 4px;
+    
 }
 .boardupBottomLeft{
-    width: 450px;
+    width: 400px;
 }
 
 .boardupBottomRight{
     width: 150px;
 }
-
 .board{
     width: 600px;
-    height: 300px;
+    min-height: 200px;
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    border: 1px black solid;
+    top: 90px;
 }
+
 .boardLeft{
     width: 100px;
     min-height: 200px;
-    background-color: aqua;
     float : left;
+    border-right: 1px black solid;
 }
+
 .boardCenter{
     width: 500px;
-    min-height: 200px;
-    background-color: rgb(214, 193, 193);
+    min-height: 100px;
     float: right;
+    
 }
+.boardCenterHeadLeft{
+    width: 500px;
+    height: 25px;
+    
+    border-bottom: 1px black solid;
+}
+
+.moreview{
+    width: 100px;
+    float: right;
+    
+}
+
 .boardBottom {
-    width: 600px;
-    height: 60px;
-    background-color: black;
+    width: 500px;
+    height: 45px;
     display: flex;
+    
+    border-top: 1px black solid;
 }
 
 
+.board svg {
+    fill: rgba(29,161,242,1.00);
+    transition: .2s;
+    width: 22px;
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 50%;
+    margin-top: 4px;
+    
+}
+.boardbtn{
+    width: 40px;
+    height: 45px;
+}
 
-
+.boardbtn :hover{
+    background-color: rgb(192, 234, 245);
+    border-radius: 50%;
+    
+}
+.blank2{
+    width: 45px;
+}
 .textform {
     min-width: 400px;
     min-height: 100px;
