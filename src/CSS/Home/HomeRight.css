@@ -4,4 +4,7 @@
     margin-bottom: 20px;
     font-size: 30px;
     float: right;
+    display: flex;
+    z-index: 200;
+    
 }

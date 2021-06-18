@@ -3,5 +3,6 @@
     margin-bottom: 20px;
     float: left;
     justify-content: center;
-    display: table;
+    display: flex;
+    z-index: 200;
 }

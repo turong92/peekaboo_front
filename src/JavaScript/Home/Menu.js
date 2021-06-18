@@ -67,7 +67,7 @@ class Menu extends Component {
                     <Modal open = { this.state.modalOpen } close = { this.closeModal }>
                          
                     </Modal>
-                    </div>
+                </div>
                 <div className="blank">
                     
                 </div>
