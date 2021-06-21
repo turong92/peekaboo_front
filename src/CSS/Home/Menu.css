@@ -1,8 +1,9 @@
 .menutotal{
     width: 250px;
-    float: right;
     margin-right: 20px;
     margin-top: -10px;
+    padding-left: 280px;
+    float: right;
 }
 .menudiv{
     margin-left: 8px;
@@ -70,8 +71,8 @@ span {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 99;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 300;
 }
 .modal button {
     outline: none;
