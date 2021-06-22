@@ -15,9 +15,9 @@ class ReadContents extends Component {
             idx :'',
             id: '',
             contents:[
-                {idx:1, id:"dummy1", insertTime:"2021-05-07", content:"12222222222222222222222222222333333333333333333333333333333333333333333333", viewCnt:999},
-                {idx:2, id:"dummy2", insertTime:"2021-05-06", content:"2 어엿비너겨", viewCnt:999},
-                {idx:3, id:"dummy3", insertTime:"2021-05-05", content:"3", viewCnt:999},
+                {idx:1, userId:"dummy1", insertTime:"2021-05-07", content:"12222222222222222222222222222333333333333333333333333333333333333333333333", viewCnt:999},
+                {idx:2, userId:"dummy2", insertTime:"2021-05-06", content:"2 어엿비너겨", viewCnt:999},
+                {idx:3, userId:"dummy3", insertTime:"2021-05-05", content:"3", viewCnt:999},
             ]
         }
     }
@@ -47,18 +47,23 @@ class ReadContents extends Component {
         var list = [];
         var i = 0;
         while(i<contents.length){
-            console.log(contents[i]);
-            list.push(
-            <div key={contents[i].idx}>
-                <div>{contents[i].id}</div>
-                <div>{contents[i].insertTime}</div>
-                <div>{contents[i].content}</div>
-                <div>{contents[i].viewCnt}</div>
-            </div>
-            )
+            list.push(<BoardForm contents={contents[i]}></BoardForm>);
             i = i + 1;
         }
-        console.log("list", list);
+
+        // while(i<contents.length){
+        //     console.log(contents[i]);
+        //     list.push(
+        //     <div key={contents[i].idx}>
+        //         <div>{contents[i].id}</div>
+        //         <div>{contents[i].insertTime}</div>
+        //         <div>{contents[i].content}</div>
+        //         <div>{contents[i].viewCnt}</div>
+        //     </div>
+        //     )
+        //     i = i + 1;
+        // }
+        // console.log("list", list);
 
         return list;
     }
@@ -80,16 +85,7 @@ class ReadContents extends Component {
                     <BoardupForm onCreate={this.handleCreate}/>
                 </div>
                 <div>
-                    <BoardForm/>
-                </div>
-                <div>
-                    <BoardForm/>
-                </div>
-                <div>
-                    <BoardForm/>
-                </div>
-                <div>
-                    <BoardForm/>
+                    {list}
                 </div>
             </div>
         );
