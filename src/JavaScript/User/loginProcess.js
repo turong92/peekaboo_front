@@ -20,15 +20,15 @@ const LoginProcess = (props) => {
             })
             .catch(e => {
                 console.log(e);
-                // const userId = "google_115854284849039362768";
-                // const userName = "전수민";
+                 const userId = "google_115854284849039362768";
+                 const userName = "전수민";
     
-                // const userData = { userId:userId, userName:userName };
+                 const userData = { userId:userId, userName:userName };
                 
-                // window.sessionStorage.setItem('userId', userId);
-                // window.sessionStorage.setItem('userName', userName);
-                // window.localStorage.setItem('userId', userId);
-                // window.localStorage.setItem('userName', userName);
+                 window.sessionStorage.setItem('userId', userId);
+                 window.sessionStorage.setItem('userName', userName);
+                 window.localStorage.setItem('userId', userId);
+                 window.localStorage.setItem('userName', userName);
     
                 // dispatch(userActions.loginUser(userData));
             });

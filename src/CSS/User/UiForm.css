@@ -28,18 +28,42 @@
     text-align: center;
     font-weight: bold;
     letter-spacing: 2px;
+    height: 70px;
 }
-.footer{
-    display: block;
-    margin-top : 2rem;
-    text-align: right;
-    float: right;
+
+.snslogin{
+    width: 330px;
+    height: 45px;
+    font-size: 18px;
+    border: rgb(161, 157, 157) solid 0.05rem ;
+    font-weight: 200;
 }
-.footer a{
- color: grey;
- text-decoration: underline;
- 
+.snsimg{
+    float : left;
+    margin-left: 18px;
 }
+.loginbtn > a:hover{
+    background-color: #ec187b;
+}
+
+.facebookbtn{
+    background-color: #4267b2;
+}
+.googlebtn{
+    background-color: rgb(255, 255, 255);
+}
+.naverbtn{
+    background-color: #00C43B ;
+}
+.kakaobtn{
+    background-color: #FEE500;    
+}
+.snslogin > a {
+    font-size : 1.1rem;
+    line-height: 40px;
+    color: black;
+}
+
 
 .loginbtn {
     border: none;
@@ -56,4 +80,8 @@
     margin-top: 1rem;
     padding-top: 0.75rem;
     font-size: 1.125rem;
+}
+
+.btn3 a{
+    width: 400px;
 }

@@ -1,10 +1,10 @@
 .HomeRight{
     width: 200px;
     min-width: 30%;
-    padding: 20px;
     margin-bottom: 20px;
-    float: right;
     font-size: 30px;
+    float: right;
+    display: flex;
+    z-index: 200;
     
-    border: 1px solid;
 }
