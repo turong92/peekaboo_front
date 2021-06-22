@@ -1,9 +1,12 @@
-.aaa{
+.menutotal{
     width: 250px;
-    float: right;
     margin-right: 20px;
-    font-size: 20px;
-    
+    margin-top: -10px;
+    padding-left: 280px;
+    float: right;
+}
+.menudiv{
+    margin-left: 8px;
 }
 .menuNav{
     padding : 0.5rem;
@@ -12,20 +15,36 @@
 .Navlink{
     padding : 10px;
     margin-top: 10px;
-    border: 1px solid;
+    width : 230px;
+    height: 30px;
 }
-svg {
-    fill: yellowgreen;
+.Navlink > a {
+    float : left;
+    font-size: 1.5rem;
+}
+.Navlink svg {
+    fill: rgba(29,161,242,1.00);
     transition: .2s;
-    width: 40px;
-    height: 20px;
+    width: 22px;
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 50%;
+    margin-top: 4px;
 }
-a:hover{
-    background-color: rgb(211, 138, 240);
+.Navlink > a:hover{
+    background-color: rgb(192, 234, 245);
+    border-radius: 0.5rem;
 
 }
-
+.Navlink > a:active{
+    background-color: rgb(192, 234, 245);
+    border-radius: 0.5rem;
+}
 .BtnLeft {
+    width: 240px;
+    height: 50px;
     border: none;
     border-radius: 25px;
     font-size: 1rem;
@@ -37,21 +56,14 @@ a:hover{
     min-width: 70%;
     margin-top: 30px;
 }
-
 span {
     color: aliceblue;
     font-size: 20px;
 }
-
 .UserMenu{
-
     bottom : 10px;
-    border: 1px solid;
     min-height: 40px;
 }
-
-
-
 .modal {
     display: none;
     position: fixed;
@@ -59,8 +71,8 @@ span {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 99;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 300;
 }
 .modal button {
     outline: none;
@@ -105,6 +117,11 @@ span {
     /* 팝업이 열릴때 스르륵 열리는 효과 */
     animation: modal-bg-show .3s;
 }
+
+.Popup > li {
+    list-style: none;
+}
+
 @keyframes modal-show {
     from {
         opacity: 0;
@@ -122,4 +139,19 @@ span {
     to {
         opacity: 1;
     }
+}
+
+.profile{
+    width: 250px;
+    height: 150px;
+    background-color: aquamarine;
+    border: 0 solid black;
+    top : 450px;
+    bottom : 400px;
+    left: 400px;
+}
+
+.profile li{
+    list-style: none;
+    padding-left: 0px;
 }
