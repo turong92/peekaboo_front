@@ -25,7 +25,7 @@ render(){
             <div className="Main">
                 <div className="Login">
                     <form className="loginform">
-                        <div className="logintitle">PEECABOO</div>
+                        <div className="logintitle">PEECABOOO</div>
                         <div className="loginbtn">
                             <div className="snslogin facebookbtn" role="button">
                                 <a href="http://localhost:8080/oauth2/authorization/google" className="btn2">
