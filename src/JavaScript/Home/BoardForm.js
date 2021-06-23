@@ -17,7 +17,7 @@ class BoardForm extends Component {
           <div className="boardCenter">
             <div className="boardCenterHead>">
               <div className="boardCenterHeadLeft">
-                {this.props.contents.userId}   {this.props.contents.insertTime}<div className="moreview"><button>더보기</button></div>
+                {this.props.contents.userName}   {this.props.contents.insertTime}<div className="moreview"><button>더보기</button></div>
               </div>
             </div>
             <div className="boardCenterbody>">
