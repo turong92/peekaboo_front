@@ -9,7 +9,7 @@ class ReadAuthPopup extends Component {
         const { open, close, header } = this.props;
 
         return (
-            <div className={ open ? 'openModal modal': 'modal' }>
+            <div className= { open ? 'openReadPopup readPopup': 'readPopup' }>
                 { open ? (  
                     <section>
                         <header>
@@ -23,9 +23,9 @@ class ReadAuthPopup extends Component {
                                     <div className="readheadercontent"><span>이 트윗에 답글을 달 수 있는 사람을 선택하세요. 멘션된 사람은 누구든지 답글을 달 수 있습니다.</span></div>
                                 </div>
                                 <div className="readmain">
-                                    <button className="readsection readauth0">모든 사람</button>
-                                    <button className="readsection readauth1">내가 팔로우하는 사람들</button>
-                                    <button className="readsection readauth2">내가 멘션하는 사람들</button>
+                                    <button className="readbtn readauth0">모든 사람</button>
+                                    <button className="readbtn readauth1">내가 팔로우하는 사람들</button>
+                                    <button className="readbtn readauth2">내가 멘션하는 사람들</button>
                                 </div>
                             </form>
                         </main>
