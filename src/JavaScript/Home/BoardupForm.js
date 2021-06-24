@@ -57,7 +57,7 @@ class BoardupForm extends Component {
           </div>
           <div className="boardupCenter">
             <div id="content" contentEditable="true" spellCheck="true" suppressContentEditableWarning="true" placeholder="무슨 일이 일어나고 있나요?"></div>
-            <div className="boardupread">
+            <div className="boardupRead">
               <button className="authbtn" onClick={this.openReadPopup}>
                 {
                   {

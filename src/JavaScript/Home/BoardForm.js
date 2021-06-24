@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 
 class BoardForm extends Component {
   state = {
+    board : [
+    {
     idx: '',
     id: '',
     insertTime:'',
     content:'',
     viewCnt:''
+    } 
+  ]
   }
-
   render() {
     return (
       <div>
