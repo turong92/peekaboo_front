@@ -72,14 +72,14 @@
     word-wrap: break-word;
     word-break: break-all;
 }
-.boardupread{
+.boardupRead{
     width: 500px;
     height: 40px;
     display: flex;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-.boardupread span{
+.boardupRead span{
     color: black;
 }
 .authbtn{
