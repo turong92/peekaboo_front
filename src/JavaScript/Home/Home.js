@@ -10,7 +10,7 @@ class Home extends Component {
       <div className="Home">
           <HomeLeft></HomeLeft>
           <HomeCenter></HomeCenter>
-          
+          <HomeRight></HomeRight>
       </div>
     );
   }

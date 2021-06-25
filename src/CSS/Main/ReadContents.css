@@ -136,30 +136,33 @@
     width: 250px;
     height: 300px;
 }
-.readauth0 {
+.readbtn {
     width: 100%;
     height: 60px;
-    background-color: blue;
+    background-color: #fff;
+}
+.readauth0 {
+
 }
 .readauth1 {
-    width: 100%;
-    height: 60px;
-    background-color: red;
+    
 }
 .readauth2 {
-    width: 100%;
-    height: 60px;
-    background-color: green;
+
 }
 
+.readauth0 :hover {
+    background-color: black;
+    cursor :pointer;
+}
 .readPopup {
     width: 500px;
     height: 400px;
     position: fixed;
-    top: 135px;
-    right: 300;
+    top: 138px;
+    right: 100px;
     bottom: 0;
-    left: 0;
+    left: 670px;
     z-index: 300;
 }
 .readPopup button {
@@ -179,7 +182,7 @@
 }
 .readPopup > section > header {
     position: relative;
-    padding: 16px 64px 16px 16px;
+    padding: 12px 32px 12px 12px;
     background-color: #f1f1f1;
     font-weight: 700;
 }
@@ -188,7 +191,7 @@
     top: -5px;
     right: 10px;
     width: 30px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     text-align: center;
     color: rgb(17, 17, 17);
