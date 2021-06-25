@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReadAuthPopup from '../../JavaScript/Home/Modal/ReadAuthPopup';
 import "../../CSS/Home/boardUpForm.css";
+import * as userActions from '../../actions/userAction';
 
 class BoardupForm extends Component {
 
@@ -32,7 +33,15 @@ class BoardupForm extends Component {
 
   writeContent = (e) => {
     e.preventDefault();
-    this.props.onCreate(document.getElementById("content").textContent);
+    const _newContent = document.getElementById("content").textContent;
+    console.log(_newContent);
+    if(!_newContent){
+      window.alert("새로운 글을 작성해주세요");
+    }else {
+      this.props.onCreate(document.getElementById("content").textContent);
+      console.log(userActions.getUserId().payload);
+      document.getElementById("content").textContent = "";
+    }
   }
 
   // 게시글 만드는 이벤트 

@@ -4,19 +4,12 @@ import React, { Component, useState } from 'react';
 
 class ReadAuthPopup extends Component {
 
-
-    handleSubmit = (e) => {
-        this.props.state {
-            
-        }
-    }
-
     render() {
         // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴
         const { open, close, header } = this.props;
 
         return (
-            <div className= { open ? 'openReadPopup readPopup': 'readPopup' }>
+            <div className={ open ? 'openReadPopup readPopup': 'readPopup' }>
                 { open ? (  
                     <section>
                         <header>
@@ -30,9 +23,9 @@ class ReadAuthPopup extends Component {
                                     <div className="readheadercontent"><span>이 트윗에 답글을 달 수 있는 사람을 선택하세요. 멘션된 사람은 누구든지 답글을 달 수 있습니다.</span></div>
                                 </div>
                                 <div className="readmain">
-                                    <button className="readbtn readauth0">모든 사람</button>
-                                    <button className="readbtn readauth1">내가 팔로우하는 사람들</button>
-                                    <button className="readbtn readauth2">내가 멘션하는 사람들</button>
+                                    <button className="readsection readauth0">모든 사람</button>
+                                    <button className="readsection readauth1">내가 팔로우하는 사람들</button>
+                                    <button className="readsection readauth2">내가 멘션하는 사람들</button>
                                 </div>
                             </form>
                         </main>
