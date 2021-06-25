@@ -4,6 +4,13 @@ import React, { Component, useState } from 'react';
 
 class ReadAuthPopup extends Component {
 
+
+    handleSubmit = (e) => {
+        this.props.state {
+            
+        }
+    }
+
     render() {
         // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴
         const { open, close, header } = this.props;
