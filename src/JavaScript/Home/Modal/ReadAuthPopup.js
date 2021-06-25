@@ -9,7 +9,7 @@ class ReadAuthPopup extends Component {
         const { open, close, header } = this.props;
 
         return (
-            <div className={ open ? 'openReadPopup readPopup': 'readPopup' }>
+            <div className={ open ? 'openReadPopup readpopup': 'readpopup' }>
                 { open ? (  
                     <section>
                         <header>
