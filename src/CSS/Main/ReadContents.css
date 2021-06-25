@@ -88,64 +88,129 @@
 }
 .authbtn span{
     color: rgba(29,161,242,1.00);
+    font-size: 15px;
 }
 .authbtn :hover{
     background-color: rgb(187, 220, 241);
     border-radius: 15px;
     cursor : pointer;
 }
+
+
+
 .Authform {
     width: 300px;
     height: 200px;
     border: 1px black solid;
     background-color: antiquewhite;
-    z-index: 300;    
-    top: 200;
-    left: 200px;
+    z-index: 300;   
 }
 
 .readauth{
-    width: 330px;
-    height: 318px;
+    width: 400px;
+    height: 255px;
     border: 1px solid black;
 }
 .readheader{
     margin-bottom: 12px;
 }
 .readheadertitle{
-    
     padding-left: 10px;
     padding-right: 10px;
 }
 .readheadertitle span {
+    color: black;
     font-size: 15px;
     font-weight: 700;
 }
 .readheadercontent{
-    
     padding-left: 10px;
     padding-right: 10px;
 }
 .readheadercontent span {
+    color: black;
     font-size: 15px;
     font-weight: 200;
 }
 .readsection {
-    width: 330px;
+    width: 250px;
     height: 300px;
 }
+.readbtn {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
 .readauth0 {
-    height: 70px;
-    background-color: blue;
+
 }
 .readauth1 {
-    height: 70px;
-    background-color: red;
+    
 }
 .readauth2 {
-    height: 70px;
-    background-color: green;
+
 }
+
+.readauth0 :hover {
+    background-color: black;
+    cursor :pointer;
+}
+.readPopup {
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    top: 138px;
+    right: 100px;
+    bottom: 0;
+    left: 670px;
+    z-index: 300;
+}
+.readPopup button {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+}
+.readPopup > section {
+    width: 83%;
+    max-width: 460px;
+    margin:0 auto;
+    border-radius: 1rem;
+    background-color: #fff;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-show .3s;
+    overflow: hidden;
+}
+.readPopup > section > header {
+    position: relative;
+    padding: 12px 32px 12px 12px;
+    background-color: #f1f1f1;
+    font-weight: 700;
+}
+.readPopup > section > header button {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(17, 17, 17);
+    background-color: transparent;
+}
+.readPopup > section > main {
+    padding: 0 5px 5px 5px;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+}
+.readPopup.openModal {
+    display: flex;
+    align-items: center;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-bg-show .3s;
+} 
+
+
+
 
 .boardupBottom {
     width: 500px;
