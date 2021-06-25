@@ -4,12 +4,14 @@ import Menu from "./Menu";
 
 class HomeLeft extends Component {
 
+  handleSelectMenu = (data) => {
+    this.props.onSelectMenu(data);
+  }
 
   render(){
     return (
       <div className="HomeLeft">
-          <Menu>
-          </Menu>
+          <Menu handleSelectMenu={this.handleSelectMenu}/>
       </div>
     );
   }

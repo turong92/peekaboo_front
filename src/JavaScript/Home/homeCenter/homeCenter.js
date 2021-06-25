@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import "../../CSS/Home/HomeCenter.css";
-import ReadContents from "./ReadContents";
+import "../../../CSS/Home/HomeCenter.css";
+import ReadContents from "../ReadContents";
 
 class HomeCenter extends Component {
       render(){

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import * as userActions from '../actions/userAction';
 
 export default (SpecialComponent, option, adminRoute=null) => {
     /* 
@@ -17,7 +18,8 @@ export default (SpecialComponent, option, adminRoute=null) => {
         
         //console.log(loginSuccess.userData);
 
-        const userId = window.localStorage.getItem("userId");
+        //const userId = window.localStorage.getItem("userId");
+        const userId = userActions.getUserId().payload;
 
         useEffect(() => {
             console.log("1");
