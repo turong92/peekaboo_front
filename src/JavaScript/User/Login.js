@@ -1,22 +1,13 @@
-import React, { Component } from 'react';
 import "../../CSS/User/Login.css";
 import UiForm from "./UiForm";
 
 
-class Login extends Component {
-  render(){
+const Login = () => {
     return (
       <div className="Login">
-        <UiForm>
-        </UiForm>
+        <UiForm></UiForm>
       </div>
-    );
-  }
-}
-
-
-
-
-
+    )
+};
 
 export default Login;
