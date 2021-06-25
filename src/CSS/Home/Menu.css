@@ -64,7 +64,7 @@ span {
     bottom : 10px;
     min-height: 40px;
 }
-.modal {
+.BtnDiv > .modal {
     display: none;
     position: fixed;
     top: 0;
@@ -74,12 +74,12 @@ span {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 300;
 }
-.modal button {
+.BtnDiv > .modal button {
     outline: none;
     cursor: pointer;
     border: 0;
 }
-.modal > section {
+.BtnDiv > .modal > section {
     width: 90%;
     max-width: 635px;
     margin:0 auto;
@@ -89,13 +89,13 @@ span {
     animation: modal-show .3s;
     overflow: hidden;
 }
-.modal > section > header {
+.BtnDiv > .modal > section > header {
     position: relative;
     padding: 16px 64px 16px 16px;
     background-color: #f1f1f1;
     font-weight: 700;
 }
-.modal > section > header button {
+.BtnDiv > .modal > section > header button {
     position: absolute;
     top: -5px;
     right: 10px;
@@ -106,19 +106,19 @@ span {
     color: rgb(17, 17, 17);
     background-color: transparent;
 }
-.modal > section > main {
+.BtnDiv > .modal > section > main {
     padding: 16px;
     border-bottom: 1px solid #dee2e6;
     border-top: 1px solid #dee2e6;
 }
-.modal.openModal {
+.BtnDiv > .modal.openModal {
     display: flex;
     align-items: center;
     /* 팝업이 열릴때 스르륵 열리는 효과 */
     animation: modal-bg-show .3s;
 }
 
-.Popup > li {
+.BtnDiv > .Popup > li {
     list-style: none;
 }
 
