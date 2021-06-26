@@ -7,8 +7,10 @@ import promiseMiddlerware from "redux-promise";
 import reduxThunk from "redux-thunk";
 
 import './index.css';
-import Main from './JavaScript/Main/Main';
-import Home from './JavaScript/Home/Home';
+import Main from './JavaScript/main/Main';
+
+import Peekaboo from './JavaScript/Peekaboo';
+
 import Login from './JavaScript/User/Login';
 import LoginProcess from './JavaScript/User/loginProcess';
 import Auth from './hoc/auth';
@@ -37,10 +39,10 @@ function App(){
     <div>
       <Switch>
         <Route exact path="/" component={Auth(Main, null)} />
-        <Route exact path="/home" component={Auth(Home, true)} />
         <Route exact path="/login" component={Auth(Login, false)} />
         <Route exact path="/loginProcess" component={Auth(LoginProcess, false)} />
-       </Switch>
+        <Route path="/" component={Auth(Peekaboo, true)} />
+      </Switch>
     </div>
   )
 }

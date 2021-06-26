@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../../CSS/Home/HomeLeft.css";
-import Menu from "./Menu";
+import Menu from "../left/Menu";
 
 class HomeLeft extends Component {
 

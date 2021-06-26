@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReadAuthPopup from '../../JavaScript/Home/Modal/ReadAuthPopup';
+import ReadAuthPopup from '../Home/Modal/ReadAuthPopup';
 import "../../CSS/Home/boardUpForm.css";
 import * as userActions from '../../actions/userAction';
 

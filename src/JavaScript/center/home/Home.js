@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import "../../CSS/Home/Home.css";
-import HomeLeft from "./HomeLeft";
-import HomeRight from "./HomeRight";
-import HomeCenter from "./homeCenter/homeCenter";
+import "../../../CSS/Home/Home.css";
+import HomeCenter from "./HomeCenter";
 
-import Profile from "./homeCenter/profile";
+import Profile from "../profile/profileCenter";
 
 class Home extends Component {
   constructor(props){
@@ -33,9 +31,7 @@ class Home extends Component {
   render(){
     return (
       <div className="Home">
-          <HomeLeft onSelectMenu={this.handleSelectMenu}/>
           {this.getCenter()}
-          <HomeRight/>
       </div>
     );
   }
