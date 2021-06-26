@@ -1,30 +1,73 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Provider, useDispatch } from "react-redux";
+import { applyMiddleware, createStore } from "redux";
+import promiseMiddlerware from "redux-promise";
+import reduxThunk from "redux-thunk";
+
 import './index.css';
-import Main from './JavaScript/Main/Main';
-import Home from './JavaScript/Home/Home';
-import {HashRouter, Route, Switch, NavLink, useParams} from 'react-router-dom';
+import Main from './JavaScript/main/Main';
+
+import Peekaboo from './JavaScript/Peekaboo';
+
+import Login from './JavaScript/User/Login';
+import LoginProcess from './JavaScript/User/loginProcess';
+import Auth from './hoc/auth';
+
+import reducer from "./reducers";
+import * as userActions from './actions/userAction';
+
+
+const createStoreWidthMiddleware = applyMiddleware(
+  promiseMiddlerware,
+  reduxThunk
+)(createStore);
+
 
 function App(){
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const userInfo = { userId:window.localStorage.getItem("userId"),
+                        userName:window.localStorage.getItem("userName")};
+    if(userInfo.userId === null) return;
+    dispatch(userActions.loginUser(userInfo));
+  })
+
   return(
     <div>
       <Switch>
-         <Route exact path="/"><Main></Main></Route>
-         <Route path="/home"><Home></Home></Route>
-         <Route path="/">Not Found</Route>
-       </Switch>
+        <Route exact path="/" component={Auth(Main, null)} />
+        <Route exact path="/login" component={Auth(Login, false)} />
+        <Route exact path="/loginProcess" component={Auth(LoginProcess, false)} />
+        <Route path="/" component={Auth(Peekaboo, true)} />
+      </Switch>
     </div>
   )
 }
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+    <Provider
+      store={createStoreWidthMiddleware(
+        reducer,
+        //개발자 도구를 사용하기 위한 설정
+        window.__REDUX_DEVTOOLS_EXTENSION__ &&
+          window.__REDUX_DEVTOOLS_EXTENSION__()
+      )}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>,
   document.getElementById('root')
 );
 
-
+/*
+<Route exact path="/" component={Main} />
+         <Route path="/home" component={Home} />
+         <Route path="/login" component={Login} />
+         <Route path="/">Not Found</Route>
+*/
 
 
 
