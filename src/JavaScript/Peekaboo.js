@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { Route, Switch } from 'react-router-dom';
 import Menu from "../JavaScript/left/Menu";
-import HomeCenter from "./center/home/HomeCenter";
+import Home from "./center/home/Home";
 import Profile from "./center/profile/profileCenter";
+
+import "../CSS/left/leftSpace.css";
 
 class Peekaboo extends Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class Peekaboo extends Component {
     getCenter = () => {
         switch (this.props.location.pathname) {
             case "/home":
-                return <HomeCenter/>;
+                return <Home/>;
             case "/profile":
                 return <Profile/>;
             default: return "err";
@@ -23,7 +24,7 @@ class Peekaboo extends Component {
         console.log(this.props);
         return(
             <div>
-                <Menu/>
+                <div className="leftSpace"><Menu/></div>
                 {this.getCenter()}
                 
             </div>

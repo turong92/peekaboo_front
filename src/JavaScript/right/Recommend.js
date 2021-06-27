@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
-import "../../CSS/Main/Recommend.css";
+import "../../CSS/right/Recommend.css";
 
 class Recommend extends Component {
     render(){

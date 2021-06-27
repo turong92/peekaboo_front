@@ -1,37 +1,34 @@
 import React, { Component } from 'react';
-import "../../../CSS/Home/Home.css";
+import "../../../CSS/center/Home/Home.css";
 import HomeCenter from "./HomeCenter";
-
-import Profile from "../profile/profileCenter";
+import HomeRight from "../../right/HomeRight";
 
 class Home extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      mode:"HOME",
-    }
   }
 
-  getCenter = () => {
-    var _center = null;
-    console.log(this.state.mode);
-    switch (this.state.mode) {
-      case "HOME":
-        return <HomeCenter/>;
-      case "PROFILE":
-        return <Profile/>
-      default: return "err";
-    }
-  }
+  // getCenter = () => {
+  //   var _center = null;
+  //   console.log(this.state.mode);
+  //   switch (this.state.mode) {
+  //     case "HOME":
+  //       return <HomeCenter/>;
+  //     case "PROFILE":
+  //       return <Profile/>
+  //     default: return "err";
+  //   }
+  // }
 
-  handleSelectMenu = (data) => {
-    this.setState({mode:data});
-  }
+  // handleSelectMenu = (data) => {
+  //   this.setState({mode:data});
+  // }
 
   render(){
     return (
       <div className="Home">
-          {this.getCenter()}
+          <HomeCenter/>
+          <HomeRight/>
       </div>
     );
   }

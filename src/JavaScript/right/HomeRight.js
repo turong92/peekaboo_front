@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "../../CSS/Home/HomeRight.css";
+import "../../CSS/right/HomeRight.css";
 import Recommend from "./Recommend";
 
 class HomeRight extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import '../../../CSS/Main/ReadContents.css';
+import "../../../CSS/center/common/ReadContents.css";
 import BoardupForm from '../../common/BoardupForm.js';
 import BoardForm from '../../common/BoardForm';
 
@@ -32,7 +32,9 @@ class ReadContents extends Component {
             console.error(e);
         });
     }
+
     handleCreate = (data) => {
+        console.log("data=======" + data);
         const { contents } = this.state;
         var len = contents.length;
         var _contents = Array.from(contents);
