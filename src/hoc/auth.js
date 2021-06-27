@@ -20,6 +20,8 @@ export default (SpecialComponent, option, adminRoute=null) => {
 
         //const userId = window.localStorage.getItem("userId");
         const userId = userActions.getUserId().payload;
+        console.log("props");
+        console.log(props);
 
         useEffect(() => {
             console.log("1");
@@ -40,7 +42,7 @@ export default (SpecialComponent, option, adminRoute=null) => {
         }, []);
 
         return (
-            <SpecialComponent />
+            <SpecialComponent {...props} />
         )
     };
 

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import "../../CSS/Main/ReadContents.css";
-import BoardupForm from './BoardupForm.js'
-import BoardForm from './BoardForm';
+import "../../../CSS/center/common/ReadContents.css";
+import BoardupForm from '../../common/BoardupForm.js';
+import BoardForm from '../../common/BoardForm';
 
 
 class ReadContents extends Component {
@@ -32,7 +32,9 @@ class ReadContents extends Component {
             console.error(e);
         });
     }
+
     handleCreate = (data) => {
+        console.log("data=======" + data);
         const { contents } = this.state;
         var len = contents.length;
         var _contents = Array.from(contents);
@@ -85,13 +87,7 @@ class ReadContents extends Component {
 
         return(
             <div className="Home">
-                <div className="Hometitle">
-                    <div className=""><h1>홈 <button className="BtnHome">dd</button></h1></div>
-                    <div></div>
-                </div>
-                <div>
-                    <BoardupForm onCreate={this.handleCreate}/>
-                </div>
+                
                 <div>
                     {list}
                 </div>
