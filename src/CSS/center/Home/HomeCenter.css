@@ -1,0 +1,8 @@
+.HomeCenter{
+    width: 600px;
+    margin-bottom: 20px;
+    float: left;
+    justify-content: center;
+    display: flex;
+    z-index: 200;
+}
