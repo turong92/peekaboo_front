@@ -22,7 +22,6 @@ class ReadContents extends Component {
         }
     }
 
-
     getContentsFromDB = async () => {
         axios.post("/read-home-contents")
         .then(response => {
@@ -33,20 +32,44 @@ class ReadContents extends Component {
         });
     }
 
-    handleCreate = (data) => {
-        console.log("data=======" + data);
-        const { contents } = this.state;
+    // handleWrite = (data) => {
+    //     const { contents } = this.state;
+    //     var len = contents.length;
+    //     var _contents = Array.from(contents);
+    //     _contents.push({
+    //         idx:len + 1,
+    //         userName:window.localStorage.getItem("userName"),
+    //         insertTime:"now",
+    //         content:data,
+    //         viewCnt:0
+    //     });
+    //     this.setState({contents:_contents});
+    //   }
+
+    static getDerivedStateFromProps(props, state) {
+        // Any time the current user changes,
+        // https://ko.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
+        // Reset any parts of state.
+        const { contents } = state;
         var len = contents.length;
         var _contents = Array.from(contents);
         _contents.push({
             idx:len + 1,
             userName:window.localStorage.getItem("userName"),
             insertTime:"now",
-            content:document.getElementById("content").textContent,
+            content:props.data,
             viewCnt:0
         });
-        this.setState({contents:_contents});
-      }
+          return {
+            contents:_contents
+          };
+    }
+
+    // componentDidUpdate(prevProps) {
+    //     if (this.props.data !== prevProps.data) {
+    //         this.handleWrite(this.props.data);
+    //     }
+    // }
 
     //테스트할 땐 아래 함수 주석처리하고 생성자에 contents에 더미 넣어서 테스트하면 됩니다.
     //아래 코드는 server랑 붙을 때 사용합니다.
