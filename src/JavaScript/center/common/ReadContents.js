@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import "../../../CSS/center/common/ReadContents.css";
-import BoardupForm from '../../common/BoardupForm.js';
 import BoardForm from '../../common/BoardForm';
 
 
