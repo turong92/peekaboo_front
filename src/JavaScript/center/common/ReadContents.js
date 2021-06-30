@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import "../../../CSS/center/common/ReadContents.css";
-import BoardupForm from '../../common/BoardupForm.js';
 import BoardForm from '../../common/BoardForm';
+import * as userActions from "../../../actions/userAction";
 
 
 class ReadContents extends Component {
@@ -15,9 +15,9 @@ class ReadContents extends Component {
             idx :'',
             id: '',
             contents:[
-                {idx:1, userName:"dummy1", insertTime:"2021-05-07", content:"12222222222222222222222222222333333333333333333333333333333333333333333333", viewCnt:999},
+                {idx:3, userName:"dummy3", insertTime:"2021-05-07", content:"3332222222222222222222222222222333333333333333333333333333333333333333333333", viewCnt:999},
                 {idx:2, userName:"dummy2", insertTime:"2021-05-06", content:"2 어엿비너겨", viewCnt:999},
-                {idx:3, userName:"dummy3", insertTime:"2021-05-05", content:"3", viewCnt:999},
+                {idx:1, userName:"dummy1", insertTime:"2021-05-05", content:"1234", viewCnt:999},
             ]
         }
     }
@@ -50,19 +50,24 @@ class ReadContents extends Component {
         // Any time the current user changes,
         // https://ko.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
         // Reset any parts of state.
-        const { contents } = state;
-        var len = contents.length;
-        var _contents = Array.from(contents);
-        _contents.push({
-            idx:len + 1,
-            userName:window.localStorage.getItem("userName"),
-            insertTime:"now",
-            content:props.data,
-            viewCnt:0
-        });
-          return {
-            contents:_contents
-          };
+        if(props.content){
+            const { contents } = state;
+            var _len = contents.length;
+            var _lastIdx = contents[_len-1].idx;
+            var _contents = Array.from(contents);
+            _contents.unshift({
+                idx:_lastIdx + 1,
+                userName:userActions.getUserName().payload,
+                insertTime:"now",
+                content:props.content,
+                viewCnt:0
+            });
+
+            return {
+                contents:_contents
+            };
+        }
+        return null;
     }
 
     // componentDidUpdate(prevProps) {
@@ -73,17 +78,19 @@ class ReadContents extends Component {
 
     //테스트할 땐 아래 함수 주석처리하고 생성자에 contents에 더미 넣어서 테스트하면 됩니다.
     //아래 코드는 server랑 붙을 때 사용합니다.
-    // componentDidMount(){
-    //     //update 전 컴포넌트에서 필요한 데이터를 요청하기 위한 외부 API 호출 시 주로 쓰입니다.
-    //     this.getContentsFromDB();
-    // }
+    componentDidMount(){
+        //update 전 컴포넌트에서 필요한 데이터를 요청하기 위한 외부 API 호출 시 주로 쓰입니다.
+        // this.getContentsFromDB();
+        this.getContentsFromDB();
+    }
+
     makeContentsList = () => {
         const {contents} = this.state;
         var list = [];
-        var i = contents.length-1;
-        while(0 <= i){
-            list.push(<BoardForm contents={contents[i]}></BoardForm>);
-            i = i - 1;
+        var i = 0;
+        while(i < contents.length){
+            list.push(<BoardForm key={contents[i].idx} contents={contents[i]}></BoardForm>);
+            i = i + 1;
         }
 
         // while(i<contents.length){
@@ -107,6 +114,7 @@ class ReadContents extends Component {
     render(){
         
         var list = this.makeContentsList();
+        console.log(this.state.contents);
 
         return(
             <div className="Home">

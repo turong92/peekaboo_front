@@ -13,11 +13,9 @@ class HomeCenter extends Component {
 
   handleCreate = (data) => {
     this.passContent(data);
-    console.log("dataasdfasdf=======" + data);
   }
 
   passContent = (data) => {
-    console.log("dataasdfasdf=======" + data);
     this.setState({content:data});
     return data;
   }
@@ -32,7 +30,7 @@ class HomeCenter extends Component {
             <div>
               <BoardupForm onCreate={this.handleCreate}/>
             </div>
-            <ReadContents data={this.state.content}/>
+            <ReadContents content={this.state.content}/>
           </div>
         </div>    
     );

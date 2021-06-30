@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ReadAuthPopup from "../common/ReadAuthPopup";
 import "../../CSS/common/boardUpForm.css";
-import * as userActions from '../../actions/userAction';
+import axios from 'axios';
+import * as userActions from "../../actions/userAction";
 
 class BoardupForm extends Component {
 
@@ -31,6 +32,16 @@ class BoardupForm extends Component {
     })
   }
 
+  sendContentToDB = async (obj) => {
+    axios.post("/write-content" , obj)
+    .then(response => {
+      console.log(response);
+    })
+    .catch(e => {
+      console.error(e);
+    });
+  }
+
   writeContent = (e) => {
     e.preventDefault();
     const _newContent = document.getElementById("content").textContent;
@@ -38,6 +49,11 @@ class BoardupForm extends Component {
       window.alert("새로운 글을 작성해주세요");
     }else {
       this.props.onCreate(document.getElementById("content").textContent);
+      var _obj = {
+        id:userActions.getUserId().payload,
+        content:document.getElementById("content").textContent,
+      };
+      this.sendContentToDB(_obj);
       document.getElementById("content").textContent = "";
     }
   }
