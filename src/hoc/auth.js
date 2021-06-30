@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import * as userActions from '../actions/userAction';
 
 export default (SpecialComponent, option, adminRoute=null) => {
     /* 
@@ -17,20 +18,21 @@ export default (SpecialComponent, option, adminRoute=null) => {
         
         //console.log(loginSuccess.userData);
 
-        const userId = window.localStorage.getItem("userId");
+        //const userId = window.localStorage.getItem("userId");
+        const userId = userActions.getUserId().payload;
 
         useEffect(() => {
-            console.log("1");
+            //console.log("1");
             if(!userId){
-                console.log("not");
+                //console.log("not");
                 if(option!==null){
-                    console.log("login");
+                    //console.log("login");
                     props.history.push("/login");
                 }
             }else{
-                console.log("already");
+                //console.log("already");
                 if(!option){
-                    console.log("home");
+                    //console.log("home");
                     props.history.push("/home");
                 }
             }
@@ -38,7 +40,7 @@ export default (SpecialComponent, option, adminRoute=null) => {
         }, []);
 
         return (
-            <SpecialComponent />
+            <SpecialComponent {...props} />
         )
     };
 
