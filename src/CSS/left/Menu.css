@@ -4,6 +4,7 @@
     margin-top: -10px;
     padding-left: 280px;
     float: right;
+    position: fixed;
 }
 .menudiv{
     margin-left: 8px;
@@ -15,7 +16,7 @@
 .Navlink{
     padding : 10px;
     margin-top: 10px;
-    width : 230px;
+    width : 200px;
     height: 30px;
 }
 .Navlink > a {

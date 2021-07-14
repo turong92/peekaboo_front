@@ -5,7 +5,7 @@ import "../../CSS/right/Recommend.css";
 class Recommend extends Component {
     render(){
         return(
-            <nav className="menuNav">
+            <nav className="Rec-menuNav">
                 <form className="form search">
                     <div className="searchbar">
                         <div className="searchLeft"></div>
