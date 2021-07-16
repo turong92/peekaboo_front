@@ -7,32 +7,35 @@ class HomeCenter extends Component {
   constructor(props){
     super(props);
     this.state = {
-      content:null
+      content:null,
+      idx:null,
+      userId:null,
     }
   }
 
   handleCreate = (data) => {
     this.passContent(data);
-    console.log("dataasdfasdf=======" + data);
   }
 
   passContent = (data) => {
-    console.log("dataasdfasdf=======" + data);
-    this.setState({content:data});
-    return data;
+    this.setState({
+      content:data.content,
+      idx:data.idx,
+      userId:data.userId,
+    });
   }
 
   render(){
     return (
       <div className="HomeCenter">
         <div className="Hometitle">
-          <div className=""><h1>홈 <button className="BtnHome">dd</button></h1></div>
+          <div className=""><h1>홈 <button className="BtnHome">별</button></h1></div>
         </div>
           <div>
             <div>
               <BoardupForm onCreate={this.handleCreate}/>
             </div>
-            <ReadContents data={this.state.content}/>
+            <ReadContents data={this.state}/>
           </div>
         </div>    
     );

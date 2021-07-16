@@ -20,21 +20,19 @@ export default (SpecialComponent, option, adminRoute=null) => {
 
         //const userId = window.localStorage.getItem("userId");
         const userId = userActions.getUserId().payload;
-        console.log("props");
-        console.log(props);
 
         useEffect(() => {
-            console.log("1");
+            //console.log("1");
             if(!userId){
-                console.log("not");
+                //console.log("not");
                 if(option!==null){
-                    console.log("login");
+                    //console.log("login");
                     props.history.push("/login");
                 }
             }else{
-                console.log("already");
+                //console.log("already");
                 if(!option){
-                    console.log("home");
+                    //console.log("home");
                     props.history.push("/home");
                 }
             }
