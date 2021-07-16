@@ -5,11 +5,11 @@ import "../../CSS/right/Recommend.css";
 class Recommend extends Component {
     render(){
         return(
-            <nav className="menuNav">
+            <nav className="Rec-menuNav">
                 <form className="form search">
                     <div className="searchbar">
                         <div className="searchLeft"></div>
-                        <input className="searchCenter" value="" type="text" placeholder="트위터 검색"></input>
+                        <input className="searchCenter"  type="text" placeholder="트위터 검색"></input>
                         <div className="searchRight"></div>
                     </div>
                 </form>

@@ -100,5 +100,6 @@ class Menu extends Component {
 
 export default Menu;
 
+
 //<div className="home"><button className="selectHomeButton" type="button" value="HOME" onClick={this.handleSelectMenu}>홈</button></div>
 //<div className="profile"><button className="selectProfileButton" type="button" value="PROFILE" onClick={this.handleSelectMenu}>프로필</button></div>

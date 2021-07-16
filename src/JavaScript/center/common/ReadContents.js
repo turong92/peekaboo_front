@@ -50,9 +50,6 @@ class ReadContents extends Component {
         // Any time the current user changes,
         // https://ko.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
         // Reset any parts of state.
-        console.log("props", props);
-        console.log("state", state);
-
         if(props.data){
             const { contents } = state;
             var _contents = Array.from(contents);

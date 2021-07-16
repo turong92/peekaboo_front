@@ -1,10 +1,27 @@
 import React, { Component, useState } from 'react';
 
+import ReadAuthPopup from "../common/ReadAuthPopup";
 
 
 class Modal extends Component {
+    state ={
+        readAuth: ["0","1","2"]
+    }
+    
+    openReadPopup2 = () => {
+        this.setState({ readAuthOpen2:true})
+      }
+      
 
+      // 읽는 권한 이벤트 열기
+    closeReadPopup2 = () => {
+        this.setState({ readAuthOpen2:false})
+        }
+      // 읽는 권한 이벤트 닫기
+      
     render() {
+        
+    const readAuth = 0;
         // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴
         const { open, close, header } = this.props;
 
@@ -23,7 +40,16 @@ class Modal extends Component {
                                     <div className="boardupWrite" type="text" contentEditable="true" placeholder="게시글 입력">
                                     </div>
                                     <div className="boardupread">
-                                        <span>누구에게 보여줄지 권한</span> 
+                                    <button className="authbtn" onClick={this.openReadPopup}>
+                                        {
+                                            {
+                                                0 : <span>  [읽는 권한 : 모두][readAuth : {readAuth}] </span>,
+                                                1 : <span>  [읽는 권한 : 팔로우한사람][readAuth] : {readAuth}] </span>,
+                                                2 : <span>  [읽는 권한 : 멘션 한사람][readAuth : {readAuth}] </span>
+                                            } [readAuth]
+                                        }
+                                    </button>
+                                    <ReadAuthPopup open = {this.state.readAuthOpen } close = {this.closeReadPopup}></ReadAuthPopup>   
                                     </div>
                                     <div className="boardupBottom">
                                         <div className="boardupBottomLeft">

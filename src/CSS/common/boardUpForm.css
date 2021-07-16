@@ -1,3 +1,212 @@
 [contentEditable=true]:empty:not(:focus):before{
     content:attr(placeholder)
 }
+
+.boardup {
+    width: 600px;
+    min-height: 267px;
+    border: 1px solid black;
+    border-top: 0;
+    margin-top: 66px;
+}
+
+.boardup2 {
+    width: 600px;
+    min-height: 267px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+.boardupLeft{
+    width: 99px;
+    min-height: 267px;
+    background-color: aqua;
+    float : left;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.boardupCenter{
+    width: 499px;
+    min-height: 267px;
+    float: right;
+}
+
+.boardupWrite{
+    width: 499px;
+    height: 160px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    resize: none;
+    font-size: 15px;
+}
+.Inputboard{
+    font-size: 1rem;
+    border : none;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5rem;
+    outline: none;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.boardupRead{
+    width: 499px;
+    height: 40px;
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.boardupRead span{
+    color: black;
+}
+.authbtn{
+    background-color: rgb(255,255,255);
+    border: 1px;
+}
+.authbtn span{
+    color: rgba(29,161,242,1.00);
+    font-size: 15px;
+}
+.authbtn :hover{
+    background-color: rgb(187, 220, 241);
+    border-radius: 15px;
+    cursor : pointer;
+}
+
+
+
+.Authform {
+    width: 300px;
+    height: 200px;
+    border: 1px black solid;
+    background-color: antiquewhite;
+    z-index: 300;   
+}
+
+.readauth{
+    width: 330px;
+    height: 255px;
+    border: 1px solid black;
+    
+}
+.readheader{
+    width: 298px;
+    margin-bottom: 12px;
+}
+.readheadertitle{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.readheadertitle span {
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+.readheadercontent{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.readheadercontent span {
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+}
+.readsection {
+    width: 330px;
+    height: 54px;
+}
+
+.readbtn {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+.readauth0 :hover {
+    background-color: black;
+    cursor :pointer;
+}
+.readpopup {
+    display: none;
+    position: fixed;
+    top: -410px;
+    right: 0;
+    bottom: 0;
+    left: -100px;
+    z-index: 300;
+}
+.readpopup button {
+    outline: none;
+    cursor: pointer;
+    border: black;
+}
+.readpopup > section {
+    margin:0 auto;
+    max-width: 340px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-show .3s;
+    overflow: hidden;
+    
+}
+.readpopup > section > header {
+    position: relative;
+    padding: 12px 32px 12px 12px;
+    background-color: #f1f1f1;
+    font-weight: 700;
+}
+.readpopup > section > header button {
+    border: 0;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    width: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(17, 17, 17);
+    background-color: transparent;
+}
+.readpopup > section > main {
+    padding: 0 5px 5px 5px;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+}
+.readpopup.openReadPopup {
+    display: flex;
+    align-items: center;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-bg-show .3s;
+} 
+
+
+
+
+.boardupBottom {
+    width: 500px;
+    height: 60px;
+    border-collapse: collapse;
+    display: flex;
+}
+.boardup svg {
+    fill: rgba(29,161,242,1.00);
+    transition: .2s;
+    width: 22px;
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 50%;
+    margin-top: 4px;
+    
+}
+.boardupBottomLeft{
+    width: 400px;
+}
+
+.boardupBottomRight{
+    width: 150px;
+}
