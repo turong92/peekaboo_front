@@ -25,6 +25,7 @@ class ReadContents extends Component {
     getContentsFromDB = async () => {
         axios.post("/read-home-contents")
         .then(response => {
+            console.log(response);
             this.setState({contents:response.data});
         })
         .catch(e => {
@@ -53,7 +54,7 @@ class ReadContents extends Component {
         console.log("props", props);
         console.log("state", state);
 
-        if(props.data){
+        if(props.data.content){
             const { contents } = state;
             var _contents = Array.from(contents);
             _contents.unshift({
