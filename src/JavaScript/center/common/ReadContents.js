@@ -25,6 +25,7 @@ class ReadContents extends Component {
     getContentsFromDB = async () => {
         axios.post("/read-home-contents")
         .then(response => {
+            console.log(response);
             this.setState({contents:response.data});
         })
         .catch(e => {
@@ -50,7 +51,8 @@ class ReadContents extends Component {
         // Any time the current user changes,
         // https://ko.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
         // Reset any parts of state.
-        if(props.data){
+        
+        if(props.data.content){
             const { contents } = state;
             var _contents = Array.from(contents);
             _contents.unshift({

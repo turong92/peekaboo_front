@@ -13,7 +13,7 @@ class BoardForm extends Component {
     return (
       <div>
         <form className="board" > 
-          <div className="boardLeft">프로필사진</div>
+          <div className="boardLeft"><img src="https://lh3.googleusercontent.com/a/AATXAJwawDtU3RJLAKXUsZQwzjB6VhB_GiSen1NH_Het=s96-c"/></div>
           <div className="boardCenter">
             <div className="boardCenterHead>">
               <div className="boardCenterHeadLeft">
