@@ -5,41 +5,47 @@ import axios from 'axios';
 import * as userActions from "../../actions/userAction";
 
 class BoardupForm extends Component {
-
-  state = {
-    idx: '1',
-    id: '',
-    insertTime:'',
-    content:'',
-    viewCnt:'',
-    readAuth: ["0","1","2"]
-  }
-
-  handleSubmit = (e) => {
-    // 페이지 리로딩 방지
-    e.preventDefault();
-    // 상태값을 onCreate 를 통하여 부모에게 전달
-    this.props.onCreate(this.state);
-    // 상태 초기화
-    this.setState({
+  constructor(props){
+    super(props);
+    this.state = {
       idx: '',
-      // idx = idx+1
       id: '',
-      // 
       insertTime:'',
       content:'',
       viewCnt:'',
-    })
+      readAuth: ["0","1","2"]
+    }
   }
 
+  // handleSubmit = (e) => {
+  //   // 페이지 리로딩 방지
+  //   e.preventDefault();
+  //   // 상태값을 onCreate 를 통하여 부모에게 전달
+  //   this.props.onCreate(this.state);
+  //   // 상태 초기화
+  //   this.setState({
+  //     idx: '',
+  //     // idx = idx+1
+  //     id: '',
+  //     // 
+  //     insertTime:'',
+  //     content:'',
+  //     viewCnt:'',
+  //   })
+  // }
+
   sendContentToDB = async (obj) => {
-    axios.post("/write-content" , obj)
+    const _result =
+    await axios.post("/write-content" , obj)
     .then(response => {
-      console.log(response);
+      return response.data;
     })
     .catch(e => {
       console.error(e);
+      //서버 연결 안됐을 때 local test용
+      return "local index";
     });
+    return _result;
   }
 
   writeContent = (e) => {
@@ -48,12 +54,15 @@ class BoardupForm extends Component {
     if(!_newContent){
       window.alert("새로운 글을 작성해주세요");
     }else {
-      this.props.onCreate(document.getElementById("content").textContent);
       var _obj = {
-        id:userActions.getUserId().payload,
+        userId:userActions.getUserId().payload,
         content:document.getElementById("content").textContent,
       };
-      this.sendContentToDB(_obj);
+      
+      this.sendContentToDB(_obj).then(result => {
+        _obj.idx = result;
+        this.props.onCreate(_obj);
+      });
       document.getElementById("content").textContent = "";
     }
   }

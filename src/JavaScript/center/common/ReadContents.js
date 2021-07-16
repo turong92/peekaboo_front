@@ -50,17 +50,18 @@ class ReadContents extends Component {
         // Any time the current user changes,
         // https://ko.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
         // Reset any parts of state.
-        if(props.content){
+        console.log("props", props);
+        console.log("state", state);
+
+        if(props.data){
             const { contents } = state;
-            var _len = contents.length;
-            var _lastIdx = contents[_len-1].idx;
             var _contents = Array.from(contents);
             _contents.unshift({
-                idx:_lastIdx + 1,
+                idx:props.data.idx,
+                content:props.data.content,
                 userName:userActions.getUserName().payload,
                 insertTime:"now",
-                content:props.content,
-                viewCnt:0
+                viewCnt:0,
             });
 
             return {
