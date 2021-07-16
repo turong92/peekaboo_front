@@ -6,13 +6,15 @@ class Recommend extends Component {
     render(){
         return(
             <nav className="Rec-menuNav">
-                <form className="form search">
+              <div className="test">
+                <div className="form search">
                     <div className="searchbar">
                         <div className="searchLeft"></div>
                         <input className="searchCenter"  type="text" placeholder="트위터 검색"></input>
                         <div className="searchRight"></div>
                     </div>
-                </form>
+                </div>
+              </div>  
                 <form className="form trend">
                   <div className="trendheader">
                       <h6>나를 위한 트렌드 <button className="trendbtn"><a herf="">설정</a></button></h6>
