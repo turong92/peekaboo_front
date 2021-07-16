@@ -33,6 +33,9 @@
     float: right;
 }
 
+.boardupCenter > content {
+    max-height: 500px;
+}
 .boardupWrite{
     width: 499px;
     height: 160px;
