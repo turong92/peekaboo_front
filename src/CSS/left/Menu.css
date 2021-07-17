@@ -14,10 +14,10 @@
     text-align: center;
 }
 .Navlink{
-    padding : 10px;
-    margin-top: 10px;
     width : 200px;
     height: 30px;
+    padding : 10px;
+    margin-top: 10px;
 }
 .Navlink > a {
     float : left;
@@ -42,6 +42,31 @@
 .Navlink > a:active{
     background-color: rgb(192, 234, 245);
     border-radius: 0.5rem;
+}
+
+.Navlink2{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: line-through;
+}
+.Navlink2 > a {
+    float : left;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color :rgb(8, 8, 8);
+}
+.Navlink2 svg {
+    color :rgb(8, 8, 8);
+    transition: .2s;
+    width: 22px;
+    height: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 50%;
+    margin-top: 4px;
 }
 .BtnLeft {
     width: 240px;

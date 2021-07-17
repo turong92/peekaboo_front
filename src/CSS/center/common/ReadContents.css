@@ -25,7 +25,6 @@
 
 .board{
     width: 600px;
-    min-height: 200px;
     display: flex;
     position: relative;
     border: 1px black solid;
@@ -36,35 +35,34 @@
 
 .boardLeft{
     width: 100px;
-    min-height: 200px;
+    min-height: 70px;
     float : left;
     border-right: 1px black solid;
 }
-
 .boardCenter{
     width: 500px;
-    min-height: 100px;
     float: right;
-    
 }
 .boardCenterHeadLeft{
     width: 500px;
     height: 25px;
-    
     border-bottom: 1px black solid;
 }
 
-.moreview{
+.boardCenterHeadLeft-moreview{
     width: 100px;
     float: right;
-    
 }
 
-.boardBottom {
+.boardCenterBody{
     width: 500px;
-    height: 45px;
+    height: 42px;
+}
+
+.boardCenterBottom {
+    width: 500px;
+    height: 25px;
     display: flex;
-    
     border-top: 1px black solid;
 }
 
@@ -72,7 +70,7 @@
 .board svg {
     fill: rgba(29,161,242,1.00);
     transition: .2s;
-    width: 22px;
+    width: 27px;
     height: 25px;
     float: left;
     margin-left: 10px;
@@ -82,14 +80,13 @@
     
 }
 .boardbtn{
-    width: 40px;
-    height: 45px;
+    width: 45px;
+    height: 36px;
 }
 
 .boardbtn :hover{
     background-color: rgb(192, 234, 245);
     border-radius: 50%;
-    
 }
 .blank2{
     width: 45px;
