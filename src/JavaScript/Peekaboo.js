@@ -16,7 +16,10 @@ class Peekaboo extends Component {
                 return <Home/>;
             case "/profile":
                 return <Profile/>;
-            default: return "err";
+            default: {
+                //서버에 id 있는지 체크하고, 없으면 err 있으면 profile page return
+                return <Profile userId={this.props.location.pathname}/>;
+            };
         }
     }
     
