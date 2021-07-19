@@ -34,8 +34,8 @@ class Modal extends Component {
                             <button className="close" onClick={close}> &times; </button>
                         </header>
                         <main>
-                            <form className="boardup2"> 
-                                <div className="boardupLeft"></div>
+                            <form className="Modal-boardup"> 
+                                <div className="Modal-boardupLeft"></div>
                                 <div className="boardupCenter">
                                     <div className="boardupWrite" type="text" contentEditable="true" placeholder="게시글 입력">
                                     </div>

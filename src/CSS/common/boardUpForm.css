@@ -4,13 +4,14 @@
 
 .boardup {
     width: 600px;
-    min-height: 267px;
+    min-height: 130px;
     border: 1px solid black;
     border-top: 0;
     margin-top: 66px;
+    display: flex;
 }
 
-.boardup2 {
+.Modal-boardup {
     width: 600px;
     min-height: 267px;
     border: 1px solid black;
@@ -20,30 +21,30 @@
 
 .boardupLeft{
     width: 99px;
-    min-height: 267px;
+    min-height: 130px;
     background-color: aqua;
     float : left;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
 }
 
+.Modal-boardupLeft{
+    width: 99px;
+    min-height: 267px;
+    background-color: aqua;
+    float : left;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
 .boardupCenter{
     width: 499px;
-    min-height: 267px;
+    min-height: 130px;
     float: right;
 }
-
-.boardupCenter > content {
-    max-height: 500px;
-}
-.boardupWrite{
+.boardupCenter-top {
     width: 499px;
-    height: 160px;
-    padding: 0px;
-    margin: 0px;
-    border: none;
-    resize: none;
-    font-size: 15px;
+    min-height: 30px;
+    background-color: aquamarine;
 }
 .Inputboard{
     font-size: 1rem;
@@ -78,8 +79,6 @@
     border-radius: 15px;
     cursor : pointer;
 }
-
-
 
 .Authform {
     width: 300px;
@@ -185,16 +184,12 @@
     animation: modal-bg-show .3s;
 } 
 
-
-
-
 .boardupBottom {
     width: 500px;
-    height: 60px;
-    border-collapse: collapse;
+    min-height: 67px;
     display: flex;
 }
-.boardup svg {
+.boardupBottomLeft svg {
     fill: rgba(29,161,242,1.00);
     transition: .2s;
     width: 22px;
@@ -207,9 +202,13 @@
     
 }
 .boardupBottomLeft{
-    width: 400px;
+    width: 365px;
+    min-height: 50px;
+    background-color: red;
 }
 
 .boardupBottomRight{
-    width: 150px;
+    width: 135px;
+    min-height: 50px;
+    background-color: blue;
 }
