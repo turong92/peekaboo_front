@@ -7,7 +7,7 @@ import promiseMiddlerware from "redux-promise";
 import reduxThunk from "redux-thunk";
 
 import './index.css';
-import Main from './JavaScript/Main/Main';
+import Main from './JavaScript/main/Main';
 
 import Peekaboo from './JavaScript/Peekaboo';
 
