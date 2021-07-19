@@ -1,13 +1,4 @@
 
-.Hometitle{
-    width: 600px;
-    height: 65px;
-    border: 1px solid black;
-    line-height: 150%;
-    position: fixed;
-    z-index: 200;
-    background-color: rgb(255, 255, 255);
-}
 
 .BtnHome{
     width: 30px;

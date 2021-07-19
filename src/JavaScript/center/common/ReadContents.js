@@ -117,12 +117,14 @@ class ReadContents extends Component {
         console.log(this.state.contents);
 
         return(
-            <div className="Home">
+            <div className="ReadContents">
                 
                 <div>
                     {list}
                 </div>
+
             </div>
+            
         );
     }
 }

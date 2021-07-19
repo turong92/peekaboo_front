@@ -28,16 +28,18 @@ class HomeCenter extends Component {
   render(){
     return (
       <div className="HomeCenter">
-        <div className="Hometitle">
+        
+        <div className="HomeCenter-body">
+        <div className="HomeCenter-body-title">
           <div className=""><h1>홈 <button className="BtnHome">별</button></h1></div>
         </div>
-          <div>
-            <div>
-              <BoardupForm onCreate={this.handleCreate}/>
-            </div>
-            <ReadContents data={this.state}/>
+        
+          <div className="boardup-form">
+            <BoardupForm onCreate={this.handleCreate}/>
           </div>
-        </div>    
+            <ReadContents data={this.state}/>
+        </div>
+      </div>    
     );
   }
 }
