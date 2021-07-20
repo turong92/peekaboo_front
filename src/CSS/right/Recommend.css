@@ -69,8 +69,10 @@
     margin: 0px;
 }
 .trendbtn{
+    width: 41px;
+    height: 32px;
     float: right;
-    margin-top: 12px;
+    margin-top: 6px;
     margin-right: 12px;
 }
 .trendbody{
