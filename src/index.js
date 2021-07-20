@@ -41,7 +41,7 @@ function App(){
         <Route exact path="/" component={Auth(Main, null)} />
         <Route exact path="/login" component={Auth(Login, false)} />
         <Route exact path="/loginProcess" component={Auth(LoginProcess, false)} />
-        <Route path="/" component={Auth(Peekaboo, true)} />
+        <Route path="/:selectedMenu/:contentId" component={Auth(Peekaboo, true)} />
       </Switch>
     </div>
   )

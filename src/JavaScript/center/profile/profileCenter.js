@@ -1,4 +1,5 @@
 import ReadContents from "../common/ReadContents";
+import "../../../CSS/center/Home/HomeCenter.css";
 import React, { Component } from "react";
 
 class ShowProfile extends Component {
@@ -11,14 +12,16 @@ class ShowProfile extends Component {
         }
     }
     render(){
-        console.log(this.props);
         return(
-            <div>
-                <div>name space</div>
-                <div>banner space</div>
-                <div>info space</div>
-                <div>select space</div>
-                <ReadContents data={this.state}/>
+            <div className="HomeCenter">
+                {this.props.userId}
+                {this.props.contentId}
+                <div className="HomeCenter-body">
+                    <div className="HomeCenter-body-title">
+                        <div className=""><h1>홈 <button className="BtnHome">별</button></h1></div>
+                    </div>
+                        <ReadContents data={this.state}/>
+                </div>
             </div>
         );
     }

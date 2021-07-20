@@ -11,14 +11,17 @@ class Peekaboo extends Component {
     }
 
     getCenter = () => {
-        switch (this.props.location.pathname) {
+        switch (this.props.match.params.selectedMenu) {
             case "/home":
                 return <Home/>;
             case "/profile":
                 return <Profile/>;
             default: {
                 //서버에 id 있는지 체크하고, 없으면 err 있으면 profile page return
-                return <Profile userId={this.props.location.pathname}/>;
+                console.log("props");
+                console.log(this.props);
+                console.log(this.props.match.params);
+                return <Profile userId={this.props.match.params.selectedMenu} contentId={this.props.match.params.contentId}/>;
             };
         }
     }
