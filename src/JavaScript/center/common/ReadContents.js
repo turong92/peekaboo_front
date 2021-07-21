@@ -23,6 +23,7 @@ class ReadContents extends Component {
     }
 
     getContentsFromDB = async () => {
+        console.log(this.props);
         axios.post("/read-home-contents")
         .then(response => {
             console.log(response);

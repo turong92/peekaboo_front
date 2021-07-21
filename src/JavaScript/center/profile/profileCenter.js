@@ -20,7 +20,7 @@ class ShowProfile extends Component {
                     <div className="HomeCenter-body-title">
                         <div className=""><h1>홈 <button className="BtnHome">별</button></h1></div>
                     </div>
-                        <ReadContents data={this.state}/>
+                        <ReadContents data={this.state} condition={this.props}/>
                 </div>
             </div>
         );
