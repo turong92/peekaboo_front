@@ -23,7 +23,7 @@ class ReadContents extends Component {
     }
 
     getContentsFromDB = async () => {
-        console.log(this.props);
+        //console.log(this.props);
         axios.post("/read-home-contents")
         .then(response => {
             console.log(response);
@@ -115,7 +115,7 @@ class ReadContents extends Component {
     render(){
         
         var list = this.makeContentsList();
-        console.log(this.state.contents);
+        //console.log(this.state.contents);
 
         return(
             <div className="ReadContents">
