@@ -12,6 +12,8 @@ class Peekaboo extends Component {
     }
 
     getCenter = () => {
+        console.log(this.props);
+        console.log("asdfasdf");
         switch (this.props.match.params.selectedMenu) {
             case "home":
                 return <Home/>;
