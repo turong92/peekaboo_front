@@ -13,7 +13,7 @@ class Menu extends Component {
         this.state = {
             modalOpen:false,
             popupOpen:false,
-            userId:userActions.getUserId().payload,
+            userId:"/" + userActions.getUserId().payload,
         };
     }
     // React에서 Component를 생성할 때 state 값을 초기화하거나 메서드를 바인딩할 때 construcotr()를 사용
