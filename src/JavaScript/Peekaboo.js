@@ -28,7 +28,7 @@ class Peekaboo extends Component {
     getProfile = () => {
         if(this.props.match.params.contentId){
             //url 파라미터로 contentId가 있다면 content(특정 글) 호출
-            return <Content contentId={this.props.match.params.contentId}/>;
+            return <Content params={this.props.match.params}/>;
         }else {
             //url 파라미터로 contentId가 없다면 profile 호출
             return <Profile userId={this.props.match.params.selectedMenu}/>;
