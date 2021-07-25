@@ -5,6 +5,9 @@ import BoardForm from '../../common/BoardForm';
 import * as userActions from "../../../actions/userAction";
 
 
+import Modal2 from '../../common/Modal'
+// 테스트용 
+
 class ReadContents extends Component {
     constructor(props){
         super(props);
@@ -21,6 +24,17 @@ class ReadContents extends Component {
             ]
         }
     }
+
+
+    
+    openModal = () => {
+        this.setState({ modalOpen:true})
+    }
+    closeModal = () => {
+        this.setState({ modalOpen:false})
+    }
+
+    // 테스트용
 
     getContentsFromDB = async () => {
         //console.log(this.props);
@@ -124,6 +138,15 @@ class ReadContents extends Component {
                     {list}
                 </div>
 
+            
+                
+                <div className="BtnDiv">
+                <button className="BtnLeft" onClick={this.openModal}><span>트윗하기</span></button>
+                    <Modal2 open = { this.state.modalOpen } close = { this.closeModal }>
+                         
+                    </Modal2>
+                </div>
+                
             </div>
             
         );

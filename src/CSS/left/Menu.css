@@ -90,38 +90,39 @@ span {
     bottom : 10px;
     min-height: 40px;
 }
-.BtnDiv > .modal {
+.modal {
     display: none;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 400;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 300;
 }
-.BtnDiv > .modal button {
+.modal button {
     outline: none;
     cursor: pointer;
-    border: 0;
+    border: black;
 }
-.BtnDiv > .modal > section {
+.modal > section {
     width: 90%;
     max-width: 635px;
     margin:0 auto;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     background-color: #fff;
     /* 팝업이 열릴때 스르륵 열리는 효과 */
     animation: modal-show .3s;
     overflow: hidden;
 }
-.BtnDiv > .modal > section > header {
+.modal > section > header {
     position: relative;
     padding: 16px 64px 16px 16px;
     background-color: #f1f1f1;
     font-weight: 700;
 }
-.BtnDiv > .modal > section > header button {
+.modal > section > header button {
+    border: 0;
     position: absolute;
     top: -5px;
     right: 10px;
@@ -132,39 +133,35 @@ span {
     color: rgb(17, 17, 17);
     background-color: transparent;
 }
-.BtnDiv > .modal > section > main {
+.modal > section > main {
     padding: 16px;
     border-bottom: 1px solid #dee2e6;
     border-top: 1px solid #dee2e6;
 }
-.BtnDiv > .modal.openModal {
+.modal.openModal {
     display: flex;
     align-items: center;
     /* 팝업이 열릴때 스르륵 열리는 효과 */
     animation: modal-bg-show .3s;
 }
 
-.BtnDiv > .Popup > li {
-    list-style: none;
+
+
+.Modal-boardup {
+    width: 600px;
+    min-height: 267px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
 }
 
-@keyframes modal-show {
-    from {
-        opacity: 0;
-        margin-top: -50px;
-    }
-    to {
-        opacity: 1;
-        margin-top: 0;
-    }
-}
-@keyframes modal-bg-show {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.Modal-boardupLeft{
+    width: 99px;
+    min-height: 267px;
+    background-color: aqua;
+    float : left;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .profile{
