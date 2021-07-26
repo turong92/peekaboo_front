@@ -26,7 +26,7 @@ class ContentCenter extends Component {
                     <div className="boardup-form">
                         
                     </div>
-                    
+                    <ReadContents data={this.state} condition={this.props}/>
                 </div>
                 
             </div>
