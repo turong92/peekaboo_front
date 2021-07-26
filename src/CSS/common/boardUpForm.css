@@ -11,14 +11,6 @@
     display: flex;
 }
 
-.Modal-boardup {
-    width: 600px;
-    min-height: 267px;
-    border: 1px solid black;
-    border-collapse: collapse;
-    
-}
-
 .boardupLeft{
     width: 99px;
     min-height: 130px;
@@ -28,14 +20,6 @@
     border-bottom: 1px solid black;
 }
 
-.Modal-boardupLeft{
-    width: 99px;
-    min-height: 267px;
-    background-color: aqua;
-    float : left;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-}
 .boardupCenter{
     width: 499px;
     min-height: 130px;
@@ -138,6 +122,7 @@
     bottom: 0;
     left: -100px;
     z-index: 300;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .readpopup button {
     outline: none;
@@ -204,11 +189,10 @@
 .boardupBottomLeft{
     width: 365px;
     min-height: 50px;
-    background-color: red;
 }
 
 .boardupBottomRight{
-    width: 135px;
+    width: 147px;
     min-height: 50px;
-    background-color: blue;
 }
+
