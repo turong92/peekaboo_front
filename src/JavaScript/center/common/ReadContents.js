@@ -37,13 +37,8 @@ class ReadContents extends Component {
     // 테스트용
 
     getContentsFromDB = async () => {
-        console.log("====================");
-        console.log(this.props);
-        var _condition = {
-            userId:this.props.condition.params.selectedMenu,
-            contentId:this.props.condition.params.contentId
-        };
-        axios.post("/read-contents", _condition)
+        //console.log(this.props);
+        axios.post("/read-home-contents")
         .then(response => {
             console.log(response);
             this.setState({contents:response.data});
@@ -141,15 +136,6 @@ class ReadContents extends Component {
                 
                 <div>
                     {list}
-                </div>
-
-            
-                
-                <div className="BtnDiv">
-                <button className="BtnLeft" onClick={this.openModal}><span>트윗하기</span></button>
-                    <Modal2 open = { this.state.modalOpen } close = { this.closeModal }>
-                         
-                    </Modal2>
                 </div>
                 
             </div>
