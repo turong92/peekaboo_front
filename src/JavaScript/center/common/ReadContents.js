@@ -23,8 +23,13 @@ class ReadContents extends Component {
     }
 
     getContentsFromDB = async () => {
-        //console.log(this.props);
-        axios.post("/read-home-contents")
+        console.log("====================");
+        console.log(this.props);
+        var _condition = {
+            userId:this.props.condition.params.selectedMenu,
+            contentId:this.props.condition.params.contentId
+        };
+        axios.post("/read-contents", _condition)
         .then(response => {
             console.log(response);
             this.setState({contents:response.data});
