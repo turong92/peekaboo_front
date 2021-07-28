@@ -16,7 +16,7 @@ class Peekaboo extends Component {
         console.log("asdfasdf");
         switch (this.props.match.params.selectedMenu) {
             case "home":
-                return <Home/>;
+                return <Home params={this.props.match.params}/>;
             case "profile":
                 return <Profile/>;
             default: {
@@ -31,7 +31,7 @@ class Peekaboo extends Component {
             return <Content params={this.props.match.params}/>;
         }else {
             //url 파라미터로 contentId가 없다면 profile 호출
-            return <Profile userId={this.props.match.params.selectedMenu}/>;
+            return <Profile params={this.props.match.params}/>;
         }
     }
     

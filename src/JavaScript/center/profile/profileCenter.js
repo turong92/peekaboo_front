@@ -32,10 +32,8 @@ class ShowProfile extends Component {
                     <div className="ProfileCenter-body-3">
                         div: ProfileCenter-body-3 트윗/트윗 및 답글/미디어 /마음에들어요 
                     </div>
-                    <div className="ProfileCenter-body-4">
-                        div: ProfileCenter-body-4 
-                    <ReadContents data={this.state} condition={this.props}/>
-                    </div>
+                    <ReadContents data={this.state} condition={this.props.params}/>
+
                 </div>
             </div>
         );

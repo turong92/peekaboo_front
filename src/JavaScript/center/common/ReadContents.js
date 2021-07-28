@@ -37,8 +37,15 @@ class ReadContents extends Component {
     // 테스트용
 
     getContentsFromDB = async () => {
-        //console.log(this.props);
-        axios.post("/read-home-contents")
+        console.log("====================");
+        console.log(this.props);
+        // var _condition = {
+        //     userId:this.props.condition.selectedMenu,
+        //     contentId:this.props.condition.contentId,
+        // };
+        var _condition = this.props.condition;
+        axios.post("/read-contents", _condition)
+
         .then(response => {
             console.log(response);
             this.setState({contents:response.data});
