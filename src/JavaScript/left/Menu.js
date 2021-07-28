@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import "../../CSS/left/Menu.css";
 import Modal from "../../JavaScript/common/Modal";
-import Modall from "../../JavaScript/common/Modall";
 import Popup from "../common/Popup";
 
 import * as userActions from '../../actions/userAction';
