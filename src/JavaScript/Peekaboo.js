@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Menu from "../JavaScript/left/Menu";
 import Home from "./center/home/Home";
-import Profile from "./center/profile/profileCenter";
+import Profile from "./center/profile/ProfileCenter";
 import Content from "./center/content/Content";
 
 import "../CSS/left/leftSpace.css";

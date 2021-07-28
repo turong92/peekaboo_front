@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import "../../CSS/left/Menu.css";
 import Modal from "../../JavaScript/common/Modal";
+import Modall from "../../JavaScript/common/Modall";
 import Popup from "../common/Popup";
 
 import * as userActions from '../../actions/userAction';
@@ -12,6 +13,8 @@ class Menu extends Component {
         super(props);
         this.state = {
             modalOpen:false,
+            modallOpen:false,
+            //test
             popupOpen:false,
             userId:"/" + userActions.getUserId().payload,
         };
@@ -25,6 +28,16 @@ class Menu extends Component {
     closeModal = () => {
         this.setState({ modalOpen:false})
     }
+
+    opneModall = () => {
+        this.setState({ modallOpen:true})
+    }
+    //test
+    closeModall = () => {
+        this.setState({ modallOpen:false})
+    }
+    //test
+
 
     openPopup = () => {
         this.setState({ popupOpen:true})
@@ -49,7 +62,7 @@ class Menu extends Component {
     render(){
         console.log(this.state.userId);
         return(
-            <div>
+        <div>
             <div className="menutotal">
                 <div className="menudiv"> 
                     <div className="Navlink">
@@ -98,12 +111,11 @@ class Menu extends Component {
                 </nav>
                 <div className="BtnDiv">
                     <button className="BtnLeft" onClick={this.openModal}><span>트윗하기</span></button>
-                    <Modal open = { this.state.modalOpen } close = { this.closeModal }>
-                         
+                    <Modal open = {this.state.modalOpen} close = { this.closeModal }>
                     </Modal>
                 </div>
+            
                 <div className="blank">
-                    
                 </div>
                 <div className="UserMenu">
                     <button className="BtnLeft" onClick={this.openPopup}><span>내정보</span></button>
@@ -111,7 +123,7 @@ class Menu extends Component {
                     </Popup>
                 </div>
             </div>
-            </div>
+        </div>
         );
     }
 }
