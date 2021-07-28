@@ -1,4 +1,5 @@
 import ReadContents from "../common/ReadContents";
+import CenterTopContents from "../content/CenterTopContent"
 import "../../../CSS/center/Home/HomeCenter.css";
 import React, { Component } from "react";
 
@@ -17,16 +18,14 @@ class ContentCenter extends Component {
         return(
             <div className="HomeCenter">
                 <div className="HomeCenter-body">
-                    {this.props.params.selectedMenu}
-                    {this.props.params.contentId}
                     <div className="HomeCenter-body-title">
                         <div className=""><h1>뒤로가기 <button className="BtnHome">별</button></h1></div>
                     </div>
                         
                     <div className="boardup-form">
-                        
+                        <CenterTopContents/>
                     </div>
-                    <ReadContents data={this.state} condition={this.props}/>
+                    <ReadContents data={this.state} condition={this.props.params}/>
                 </div>
                 
             </div>

@@ -25,7 +25,7 @@ class ShowProfile extends Component {
                     <div className="boardup-form">
                     
                     </div>
-                    <ReadContents data={this.state} condition={this.props}/>
+                    <ReadContents data={this.state} condition={this.props.params}/>
                 </div>
                 
             </div>
