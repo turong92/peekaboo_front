@@ -55,8 +55,13 @@
     position: relative;
     border-bottom: 1px black solid;
 }
+
+.trnedhead-form{
+    
+    border-bottom: 1px rgb(239, 243, 244) solid ; 
+}
 .trendheader {
-    width: 350px;
+    width: 335px;
     height: 50px;
     position: static;
     background-color: rgb(235, 238, 240);
@@ -64,11 +69,13 @@
     display: block;
     text-align: left;
     line-height: 50px;
+    padding-left: 16px;  
 }
-.trendheader h6{
+.trendheader h6
+{
     margin: 0px;
-}
-.trendbtn{
+    height: 24px;
+}.trendbtn{
     width: 41px;
     height: 32px;
     float: right;
@@ -76,15 +83,32 @@
     margin-right: 12px;
 }
 .trendbody{
-    width: 350px;
-    height: 50px;
+    width: 316x;
+    height: 38px;
     display: block;
-    border: 1px black solid;
     border-bottom: 0px;
     text-align: left;
     font-size: 15px;
+    padding-top :12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom : 12px;
 }
 
+.trendbody-head{
+    width: 316px;
+    height: 16px;
+}  
+.trendbody-body{
+    width: 316px;
+    height: 22px;
+}   
+.trendbody-bottom{
+       
+    width: 316px;
+    height: 16px;
+    margin-top: 4px;
+}
 .follow {
     height: 400px;
     border-radius: 10px;

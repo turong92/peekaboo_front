@@ -1,4 +1,7 @@
-
+.ReadContents{
+    width: 600px;
+    height: auto;
+}
 
 .BtnHome{
     width: 30px;
@@ -16,47 +19,74 @@
 
 .board{
     width: 600px;
-    display: flex;
     position: relative;
     border: 1px black solid;
     border-collapse: collapse;
-    top: 15px;
     word-wrap: break-word;
+    
+    display: flex;
 }
 
 .boardLeft{
     width: 100px;
-    min-height: 70px;
+    min-height: 99.32px;
     float : left;
     border-right: 1px black solid;
 }
 .boardCenter{
     width: 500px;
-    float: right;
+    min-height: 99.32px;
 }
-.boardCenterHeadLeft{
+.boardCenterHeadtest{
     width: 500px;
+    height: 45px;
+    background-color: black;
+}
+.boardCenterHead-Left{
+    width: 450px;
     height: 25px;
-    border-bottom: 1px black solid;
+    float: left;
 }
 
-.boardCenterHeadLeft-moreview{
-    width: 100px;
-    float: right;
+.boardCenterHead-Right{
+    width: 50px;
+    height: 25px;
+    float: left;
 }
 
+.boardCenterHead-Right-btn{
+    width: 30px;
+    height: 30px;
+}
+.boardCenter2{
+    width: 500px;
+    height: 64px;
+}
 .boardCenterBody{
     width: 500px;
     height: 42px;
+    background-color: red;
+    border-top: 1px black solid;
 }
 
 .boardCenterBottom {
     width: 500px;
-    height: 25px;
+    height: 30px;
+    display: flex;
+    background-color: black;
+}
+.boardCenterBottom-Bot
+{
+    width: 500px;
+    height: 10px;
     display: flex;
     border-top: 1px black solid;
 }
-
+.optionsvg{
+    width: 20px;
+    height: 20px;
+}
+   
 
 .board svg {
     fill: rgba(29,161,242,1.00);
@@ -81,6 +111,7 @@
 }
 .blank2{
     width: 45px;
+    height: 36px;
 }
 .textform {
     min-width: 400px;
