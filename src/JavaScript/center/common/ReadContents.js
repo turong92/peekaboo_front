@@ -141,7 +141,7 @@ class ReadContents extends Component {
         return(
             <div className="ReadContents">
                 
-                <div>
+                <div className="">
                     {list}
                 </div>
                 

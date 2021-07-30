@@ -16,6 +16,8 @@ class Recommend extends Component {
                 </div>
               </div>  
                 <form className="form trend">
+                  
+                <div className="trnedhead-form">
                   <div className="trendheader">
                       <h6>나를 위한 트렌드 <button className="trendbtn"><a herf="">
                         <svg>
@@ -26,8 +28,11 @@ class Recommend extends Component {
                         </svg>
                         </a></button>
                       </h6>
-                  </div>
+                    </div>
+                </div>
                   <div className="trendbody">
+                    <div className="trendbody-head">
+              
                     <NavLink to="/">팔로우 추천</NavLink> <button className="trendbtn"><a>
                       <svg>
                         <g>
@@ -37,6 +42,13 @@ class Recommend extends Component {
                         </g>
                       </svg>
                       </a></button>
+                    </div>
+                    <div className="trendbody-body">
+
+                    </div>
+                    <div className="trendbody-bottom">
+
+                    </div>
                   </div>
                   <div className="trendbody">
                     <NavLink to="/">팔로우 추천</NavLink> <button className="trendbtn"><a>
