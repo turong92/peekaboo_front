@@ -5,7 +5,7 @@
 .boardup {
     width: 600px;
     min-height: 130px;
-    border-right: 1px solid black;
+    border-right: 1px rgb(239, 243, 244) solid ; 
     border-top: 0;
     margin-top: 66px;
     display: flex;
@@ -14,11 +14,10 @@
 .boardupLeft{
     width: 99px;
     min-height: 130px;
-    background-color: aqua;
     float : left;
-    border-left : 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left : 1px rgb(239, 243, 244) solid ; 
+    border-right: 1px rgb(239, 243, 244) solid ; 
+    border-bottom:1px rgb(239, 243, 244) solid ; 
 }
 
 .boardupCenter{
@@ -45,8 +44,8 @@
     width: 499px;
     height: 40px;
     display: flex;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px rgb(239, 243, 244) solid ; 
+    border-bottom:1px rgb(239, 243, 244) solid ; 
 }
 .boardupRead span{
     color: black;
@@ -68,7 +67,7 @@
 .Authform {
     width: 300px;
     height: 200px;
-    border: 1px black solid;
+    border: 1px rgb(239, 243, 244) solid ; 
     background-color: antiquewhite;
     z-index: 300;   
 }
@@ -76,7 +75,7 @@
 .readauth{
     width: 330px;
     height: 255px;
-    border: 1px solid black;
+    border:1px rgb(239, 243, 244) solid ; 
     
 }
 .readheader{
@@ -175,7 +174,8 @@
     min-height: 67px;
     display: flex;
 
-    border-bottom: 1px black solid;
+    border-bottom: 1px rgb(239, 243, 244) solid ; 
+    border-right:1px rgb(239, 243, 244) solid ; 
     background-color: #ffffff;
 }
 .boardupbtn-div{
@@ -208,6 +208,6 @@
     width: 147px;
     min-height: 50px;
     
-    border-right: 1px solid black;
+    border-right:1px rgb(239, 243, 244) solid ; 
 }
 
