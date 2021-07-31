@@ -33,7 +33,7 @@ class Recommend extends Component {
                   <div className="trendbody">
                     <div className="trendbody-head">
               
-                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbtn"><a>
+                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbodybtn"><a>
                       <svg>
                         <g>
                           <circle cx="5" cy="12" r="2"></circle>
@@ -51,7 +51,9 @@ class Recommend extends Component {
                     </div>
                   </div>
                   <div className="trendbody">
-                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbtn"><a>
+                    <div className="trendbody-head">
+              
+                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbodybtn"><a>
                       <svg>
                         <g>
                           <circle cx="5" cy="12" r="2"></circle>
@@ -60,9 +62,18 @@ class Recommend extends Component {
                         </g>
                       </svg>
                       </a></button>
+                    </div>
+                    <div className="trendbody-body">
+
+                    </div>
+                    <div className="trendbody-bottom">
+
+                    </div>
                   </div>
                   <div className="trendbody">
-                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbtn"><a>
+                    <div className="trendbody-head">
+              
+                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbodybtn"><a>
                       <svg>
                         <g>
                           <circle cx="5" cy="12" r="2"></circle>
@@ -71,9 +82,18 @@ class Recommend extends Component {
                         </g>
                       </svg>
                       </a></button>
+                    </div>
+                    <div className="trendbody-body">
+
+                    </div>
+                    <div className="trendbody-bottom">
+
+                    </div>
                   </div>
                   <div className="trendbody">
-                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbtn"><a>
+                    <div className="trendbody-head">
+              
+                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbodybtn"><a>
                       <svg>
                         <g>
                           <circle cx="5" cy="12" r="2"></circle>
@@ -82,9 +102,18 @@ class Recommend extends Component {
                         </g>
                       </svg>
                       </a></button>
+                    </div>
+                    <div className="trendbody-body">
+
+                    </div>
+                    <div className="trendbody-bottom">
+
+                    </div>
                   </div>
                   <div className="trendbody">
-                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbtn"><a>
+                    <div className="trendbody-head">
+              
+                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbodybtn"><a>
                       <svg>
                         <g>
                           <circle cx="5" cy="12" r="2"></circle>
@@ -93,9 +122,18 @@ class Recommend extends Component {
                         </g>
                       </svg>
                       </a></button>
+                    </div>
+                    <div className="trendbody-body">
+
+                    </div>
+                    <div className="trendbody-bottom">
+
+                    </div>
                   </div>
                   <div className="trendbody">
-                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbtn"><a>
+                    <div className="trendbody-head">
+              
+                    <NavLink to="/">팔로우 추천</NavLink> <button className="trendbodybtn"><a>
                       <svg>
                         <g>
                           <circle cx="5" cy="12" r="2"></circle>
@@ -104,6 +142,13 @@ class Recommend extends Component {
                         </g>
                       </svg>
                       </a></button>
+                    </div>
+                    <div className="trendbody-body">
+
+                    </div>
+                    <div className="trendbody-bottom">
+
+                    </div>
                   </div>
                 </form>              
                 <form className="form follow ">
