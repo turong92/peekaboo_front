@@ -27,7 +27,7 @@ class Home extends Component {
   render(){
     return (
       <div className="Home">
-          <HomeCenter/>
+          <HomeCenter params={this.props.params}/>
           <HomeRight/>
       </div>
     );

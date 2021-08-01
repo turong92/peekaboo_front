@@ -11,7 +11,7 @@ class Content extends Component {
   render(){
     return (
       <div className="Home">
-          <ContentCenter contentId={this.props.contentId}/>
+          <ContentCenter params={this.props.params}/>
       </div>
     );
   }

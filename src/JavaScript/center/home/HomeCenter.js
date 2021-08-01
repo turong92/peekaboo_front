@@ -46,7 +46,7 @@ class HomeCenter extends Component {
           <div className="boardup-form">
             <BoardupForm onCreate={this.handleCreate}/>
           </div>
-          <ReadContents data={this.state}/>
+          <ReadContents data={this.state} condition={this.props.params}/>
         </div>
       </div>
     );

@@ -5,6 +5,9 @@ import BoardForm from '../../common/BoardForm';
 import * as userActions from "../../../actions/userAction";
 
 
+import Modal2 from '../../common/Modal'
+// 테스트용 
+
 class ReadContents extends Component {
     constructor(props){
         super(props);
@@ -22,9 +25,27 @@ class ReadContents extends Component {
         }
     }
 
+
+    
+    openModal = () => {
+        this.setState({ modalOpen:true})
+    }
+    closeModal = () => {
+        this.setState({ modalOpen:false})
+    }
+
+    // 테스트용
+
     getContentsFromDB = async () => {
-        //console.log(this.props);
-        axios.post("/read-home-contents")
+        console.log("====================");
+        console.log(this.props);
+        // var _condition = {
+        //     userId:this.props.condition.selectedMenu,
+        //     contentId:this.props.condition.contentId,
+        // };
+        var _condition = this.props.condition;
+        axios.post("/read-contents", _condition)
+
         .then(response => {
             console.log(response);
             this.setState({contents:response.data});
@@ -120,10 +141,10 @@ class ReadContents extends Component {
         return(
             <div className="ReadContents">
                 
-                <div>
+                <div className="">
                     {list}
                 </div>
-
+                
             </div>
             
         );

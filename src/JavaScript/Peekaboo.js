@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Menu from "../JavaScript/left/Menu";
 import Home from "./center/home/Home";
-import Profile from "./center/profile/profileCenter";
+import Profile from "./center/profile/ProfileCenter";
 import Content from "./center/content/Content";
 
 import "../CSS/left/leftSpace.css";
@@ -16,7 +16,7 @@ class Peekaboo extends Component {
         console.log("asdfasdf");
         switch (this.props.match.params.selectedMenu) {
             case "home":
-                return <Home/>;
+                return <Home params={this.props.match.params}/>;
             case "profile":
                 return <Profile/>;
             default: {
@@ -27,10 +27,11 @@ class Peekaboo extends Component {
 
     getProfile = () => {
         if(this.props.match.params.contentId){
-            //이거대신 content 목록으로 수정해야합니다.
-            return <Content contentId={this.props.match.params.contentId}/>;
+            //url 파라미터로 contentId가 있다면 content(특정 글) 호출
+            return <Content params={this.props.match.params}/>;
         }else {
-            return <Profile userId={this.props.match.params.selectedMenu}/>;
+            //url 파라미터로 contentId가 없다면 profile 호출
+            return <Profile params={this.props.match.params}/>;
         }
     }
     

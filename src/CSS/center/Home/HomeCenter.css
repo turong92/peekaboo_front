@@ -14,7 +14,7 @@
 .HomeCenter-body-title{
     width: 600px;
     height: 65px;
-    border: 1px solid black;
+    border: 1px rgb(239, 243, 244) solid ;
     line-height: 150%;
     position: fixed;
     background-color: rgb(255, 255, 255);

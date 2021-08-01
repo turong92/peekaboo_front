@@ -1,0 +1,119 @@
+.ProfileCenter{
+    width: 600px;
+    min-height: 1000px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: left;
+    justify-content: center;
+    display: block;
+    z-index: 200;
+}
+.ProfileCenter-title {
+    
+    width: 600px;
+    height: 65px;
+    border: 1px solid black;
+    line-height: 150%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    display: block;
+}
+.ProfileCenter-title-form{
+    width: 566px;
+    height: 53px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.ProfileCenter-title-form-left {
+    width: 56px;
+    height: 53px;
+    float: left;
+}
+.testbtn{
+    width: 38px;
+    height: 38px;
+    color:rgba(29,161,242,1.00);
+}
+.testbtn > svg{
+    color:rgba(29,161,242,1.00);
+}
+.ProfileCenter-title-form-right{
+    width: 510px;
+    height: 53px;
+    float: left;
+}
+.ProfileCenter-title-right-top {
+    width: 60px;
+    height: 24px;
+}
+
+.ProfileCenter-title-right-bot {
+    width: 51.67px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 13px;
+    color: rgb(83, 100, 113);
+    font-weight: 400;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.ProfileCenter-body{
+    width: 600px;
+    min-height: 200px;
+    margin-top: 65px;
+    display: block;
+}
+
+.ProfileCenter-body-1{
+    height: 200px;
+    background-color: rgb(240, 138, 138);
+}
+.ProfileCenter-body-2{
+    height: 200px;
+    background-color: aqua;
+}
+.ProfileCenter-body-2-head{
+    height: 52px;
+}
+
+.ProfileCenter-body-2-body-1{
+    height: 44px;
+}
+.ProfileCenter-body-2-body-2{
+    height: 20px;
+}
+.ProfileCenter-body-2-bottom{
+    height: 20px;
+}
+.ProfileCenter-body-nav{
+    height: 53px;
+    background-color: bisque;
+}
+.ProfileCenter-body-nav-1{
+    width: 127.53px;
+    height: 53px;
+    background-color: blue;
+    float: left;
+}
+.ProfileCenter-body-nav-2{
+    width: 183.45px;
+    height: 53px;
+    float: left;
+}
+.ProfileCenter-body-nav-3{
+    width: 143.52px;
+    height: 53px;
+    float: left;
+}
+.ProfileCenter-body-nav-4{
+    width: 143.52px ;
+    height: 53px;
+    float: left;
+
+}
+.ProfileCenter-body-4{
+    height: auto;
+    height: 53px;
+    float: left;
+
+}
