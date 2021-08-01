@@ -37,10 +37,11 @@
     width: 500px;
     min-height: 99.32px;
 }
-.boardCenterHeadtest{
+.boardCenterHead{
     width: 500px;
-    height: 45px;
-    background-color: black;
+    height: 25px;
+    position: inherit;
+    top: 0;
 }
 .boardCenterHead-Left{
     width: 450px;
@@ -52,28 +53,35 @@
     width: 50px;
     height: 25px;
     float: left;
+    background-color: rgb(255, 255, 255) ;
 }
-
+.boardCenterHead-Right-moreview{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(255, 255, 255) ;
+}
 .boardCenterHead-Right-btn{
-    width: 30px;
-    height: 30px;
+    padding : 0px;
+    margin: 0px;
+    width: 50px;
+    height: 25px;
+    border :0px;
 }
-.boardCenter2{
-    width: 500px;
-    height: 64px;
+.boardCenterHead-Right-btn :hover{
+    background-color: rgb(192, 234, 245);
 }
 .boardCenterBody{
     width: 500px;
-    height: 42px;
-    background-color: red;
-    border-top: 1px rgb(239, 243, 244) solid ; 
+    min-height: 42px;
+    border-top: 1px rgb(239, 243, 244) solid ;
+    overflow:hidden;
 }
 
 .boardCenterBottom {
     width: 500px;
     height: 30px;
     display: flex;
-    background-color: black;
+    bottom: 0; 
 }
 .boardCenterBottom-Bot
 {
@@ -85,10 +93,22 @@
 .optionsvg{
     width: 20px;
     height: 20px;
+    margin: 0px;
 }
    
 
-.board svg {
+.boardCenterHead-Right-btn svg {
+    fill: rgba(29,161,242,1.00);
+    transition: .2s;
+    width: 27px;
+    height: 25px;
+    float: left;
+    margin-left: 13px;
+    margin-right: 10px;
+    line-height: 50%;
+}
+
+.boardbtn svg {
     fill: rgba(29,161,242,1.00);
     transition: .2s;
     width: 27px;
@@ -105,6 +125,13 @@
 }
 
 .boardbtn :hover{
+    
+    background-color: rgb(192, 234, 245);
+    border-radius: 50%;
+    z-index: 30;
+}
+.boardbtn-div :hover{
+    
     background-color: rgb(192, 234, 245);
     border-radius: 50%;
 }
