@@ -68,7 +68,7 @@ class ShowProfile extends Component {
 
                     <div className="ProfileCenter-body-4">
                         <div className="ProfileCenter-body-4-ReadContents">        
-                        <ReadContents data={this.state} condition={this.props}/>
+                        <ReadContents data={this.state} condition={this.props.params}/>
                         </div>
                     </div>
                 </div>
