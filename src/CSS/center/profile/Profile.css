@@ -1,43 +1,58 @@
 .ProfileCenter{
     width: 600px;
     min-height: 1000px;
-    padding-left: 16px;
-    padding-right: 16px;
     float: left;
     justify-content: center;
     display: block;
     z-index: 200;
+    
+    border: 1px rgb(239, 243, 244) solid ;
 }
 .ProfileCenter-title {
     
+    border-bottom: 1px rgb(239, 243, 244) solid ;
     width: 600px;
     height: 65px;
-    border: 1px solid black;
     line-height: 150%;
     position: fixed;
     background-color: rgb(255, 255, 255);
     display: block;
 }
 .ProfileCenter-title-form{
+    
     width: 566px;
     height: 53px;
     padding-left: 16px;
     padding-right: 16px;
 }
 .ProfileCenter-title-form-left {
+    
+    padding-top: 14px;
     width: 56px;
     height: 53px;
     float: left;
 }
-.testbtn{
+.ProfileCenter-title-form-left-btn{
     width: 38px;
     height: 38px;
-    color:rgba(29,161,242,1.00);
+    border :0;
+    background-color: rgb(255, 255, 255);
 }
-.testbtn > svg{
-    color:rgba(29,161,242,1.00);
+.ProfileCenter-title-form-left-btn svg{
+    
+    fill: rgba(29,161,242,1.00);
+    transition: .2s;
+    width: 27px;
+    height: 25px;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    line-height: 50%;
+    margin-top: 4px;
 }
 .ProfileCenter-title-form-right{
+    
+    padding-top: 14px;
     width: 510px;
     height: 53px;
     float: left;
@@ -47,71 +62,231 @@
     height: 24px;
 }
 
+.ProfileCenter-title-right-top > h2{
+    margin-top: 0;
+}
 .ProfileCenter-title-right-bot {
     width: 51.67px;
     height: 16px;
-    line-height: 16px;
+    line-height: 22px;
     font-size: 13px;
     color: rgb(83, 100, 113);
     font-weight: 400;
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-wrap: break-word;
+
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
 }
 
-.ProfileCenter-body{
+.ProfileCenter-section{
     width: 600px;
     min-height: 200px;
     margin-top: 65px;
     display: block;
 }
 
-.ProfileCenter-body-1{
-    height: 200px;
-    background-color: rgb(240, 138, 138);
+.ProfileCenter-section-1{
+    height: 200px;    
+    background-color: rgb(207, 217, 222);
 }
-.ProfileCenter-body-2{
-    height: 200px;
-    background-color: aqua;
+.ProfileCenter-section-2{
+    width: 566px;
+    height: 164px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    padding-bottom: 16px;
+
 }
-.ProfileCenter-body-2-head{
+.ProfileCenter-section-2-head{
     height: 52px;
+    
 }
 
-.ProfileCenter-body-2-body-1{
+.ProfileCenter-section-2-head-left{
+    width: 131.5px;
+    height: 131.5px;
+    border:1px;
+    position: absolute;
+    top : 200px;
+}
+
+.ProfileCenter-section-2-head-left-img{
+    
+    width: 133.5px;
+    height: 134px;
+    overflow: hidden;
+    border: 4px solid white;
+    border-radius: 9999px;
+}
+.ProfileCenter-section-2-head-left img{
+    width: 134px;
+    height: 134px;
+    border-color: rgba(0, 0, 0, 0.04);
+}
+.ProfileCenter-section-2-head-right{
+    width: 133px;
+    height: 52px;
+    float: right;
+}
+.ProfileCenter-section-2-head-right-btn {
+    width: 133.328px;
+    height: 38px;
+    font-weight: 700;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 10px;
+    overflow-wrap: break-word;
+    border-radius: 25px;
+    outline : none;
+    cursor : pointer;
+    background-color: aliceblue;
+    border: 1px rgb(29, 161, 242) solid;
+}
+
+
+.ProfileCenter-section-2-head-right-btn-div span {
+    color:rgb(29, 161, 242);
+    font-size: 16px;
+}
+
+
+
+
+.ProfileCenter-section-2-section-1{
     height: 44px;
+    margin-top: 4px;
+    margin-bottom: 12px;
 }
-.ProfileCenter-body-2-body-2{
-    height: 20px;
+.ProfileCenter-section-2-section-1-title{
+    width: 566px;
+    height: 24px;
 }
-.ProfileCenter-body-2-bottom{
-    height: 20px;
-}
-.ProfileCenter-body-nav{
-    height: 53px;
-    background-color: bisque;
-}
-.ProfileCenter-body-nav-1{
-    width: 127.53px;
-    height: 53px;
-    background-color: blue;
-    float: left;
-}
-.ProfileCenter-body-nav-2{
-    width: 183.45px;
-    height: 53px;
-    float: left;
-}
-.ProfileCenter-body-nav-3{
-    width: 143.52px;
-    height: 53px;
-    float: left;
-}
-.ProfileCenter-body-nav-4{
-    width: 143.52px ;
-    height: 53px;
-    float: left;
+.ProfileCenter-section-2-section-1-title span{
+    font-size: 20px;
+    color: #0f1419;
 
 }
-.ProfileCenter-body-4{
+.ProfileCenter-section-2-section-1-section{
+    width: 566px;
+    height: 20px;
+}
+.ProfileCenter-section-2-section-1-section span{
+    font-size: 16px;
+    color: #536471;
+}
+.ProfileCenter-section-2-section-2{
+    height: 20px;
+    margin-bottom: 12px;
+}
+
+.ProfileCenter-section-2-section-2-div{
+    width: 200px;
+    height: 20px;
+}
+.ProfileCenter-section-2-section-2-div svg{
+    width: 20px;
+    height: 20px;
+}
+.ProfileCenter-section-2-section-2 span{
+    font-size: 14px;
+    color: #536471;
+    height: 20px;
+}
+
+.ProfileCenter-section-2-bottom{
+    height: 20px;
+}
+.ProfileCenter-section-2-bottom-div{
+    width: 566px;
+    height: 20px;
+}
+
+.ProfileCenter-section-2-bottom-div-follow{
+    width: 81px;
+    height: 20px;
+    margin-right: 20px;
+    float: left;
+}
+.span-number {
+    font-size: 16px;
+    color: #0f1419;
+    font-weight: 1000;
+}
+.span-follow{
+    font-size: 16px;
+    color: #536471;
+}
+.ProfileCenter-section-nav{
+    height: 53px;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+.ProfileCenter-section-nav1{
+    width: 82.531px;
+    height: 53px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: left;
+}
+.ProfileCenter-section-nav1-text{
+    width: 32px;
+    height: 21px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left : 20px;
+
+}
+.ProfileCenter-section-nav2{
+    width: 138.469px;
+    height: 53px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: left;
+}
+.ProfileCenter-section-nav2-text{
+    width: 87.938px;
+    height: 21px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left : 20px;
+}
+.ProfileCenter-section-nav3{
+    width: 98.531px;
+    height: 53px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: left;
+    
+}
+.ProfileCenter-section-nav3-text{
+    width: 48px;
+    height: 21px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left : 20px;
+}
+.ProfileCenter-section-nav4{
+    width: 150.5px ;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 53px;
+    float: left;
+}
+.ProfileCenter-section-nav4-text{
+    width: 99.969px;
+    height: 21px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left : 20px;
+}
+.ProfileCenter-section-4{
     height: auto;
     height: 53px;
     float: left;
