@@ -15,6 +15,7 @@ class ShowProfile extends Component {
         //{this.props.userId} (userId) 기준으로 userProfile 상단에 출력
         //해당 유저작성글 기준으로 readContent로 받아와서 출력
         return(
+          <div className="Profileform">  
             <div className="ProfileCenter">
                 <div className=""></div>
                 <div className="ProfileCenter-title">
@@ -39,32 +40,32 @@ class ShowProfile extends Component {
                     </div>
                 </div>
                 <div className="ProfileCenter-section">
-                    <div className="ProfileCenter-section-1">
+                    <div className="ProfileCenter-section1">
                     </div>
-                    <div className="ProfileCenter-section-2">
+                    <div className="ProfileCenter-section2">
                         
-                        <div className="ProfileCenter-section-2-head">
-                            <div className="ProfileCenter-section-2-head-left">
+                        <div className="ProfileCenter-section2-head">
+                            <div className="ProfileCenter-section2-head-left">
                             
-                            <div className="ProfileCenter-section-2-head-left-img">
+                            <div className="ProfileCenter-section2-head-left-img">
                             <img alt="" draggable="true" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_200x200.png" class="css-9pa8cd"/>
                             </div>
                             
                             </div>
-                            <div className="ProfileCenter-section-2-head-right">
-                                <div className="ProfileCenter-section-2-head-right-btn-div">
-                                <button className="ProfileCenter-section-2-head-right-btn">
+                            <div className="ProfileCenter-section2-head-right">
+                                <div className="ProfileCenter-section2-head-right-btn-div">
+                                <button className="ProfileCenter-section2-head-right-btn">
                                     <span>프로필 설정하기</span>
                                 </button>
                                 </div>
                             </div>
                         </div>
-                        <div className="ProfileCenter-section-2-section-1">
-                            <div className="ProfileCenter-section-2-section-1-title"><span>이름 : 이해준</span></div>   
-                            <div className="ProfileCenter-section-2-section-1-section"><span>UserId: {this.props.userId}</span></div>
+                        <div className="ProfileCenter-section2-section-1">
+                            <div className="ProfileCenter-section2-section1-title"><span>이름 : 이해준</span></div>   
+                            <div className="ProfileCenter-section2-section1-section"><span>UserId: {this.props.userId}</span></div>
                         </div>
-                        <div className="ProfileCenter-section-2-section-2">
-                            <div className="ProfileCenter-section-2-section-2-div">
+                        <div className="ProfileCenter-section2-section2">
+                            <div className="ProfileCenter-section2-section2-div">
                                 <svg>
                                     <g>
                                     <path d="M19.708 2H4.292C3.028 2 2 3.028 2 4.292v15.416C2 20.972 3.028 22 4.292 22h15.416C20.972 22 22 20.972 22 19.708V4.292C22 3.028 20.972 2 19.708 2zm.792 17.708c0 .437-.355.792-.792.792H4.292c-.437 0-.792-.355-.792-.792V6.418c0-.437.354-.79.79-.792h15.42c.436 0 .79.355.79.79V19.71z"></path>
@@ -81,13 +82,13 @@ class ShowProfile extends Component {
                                 <span> 가입일: 2021년 8월 02일</span>
                             </div>
                         </div>
-                        <div className="ProfileCenter-section-2-bottom">
-                            <div className="ProfileCenter-section-2-bottom-div">
-                                <div className="ProfileCenter-section-2-bottom-div-follow">
+                        <div className="ProfileCenter-section2-bottom">
+                            <div className="ProfileCenter-section2-bottom-div">
+                                <div className="ProfileCenter-section2-bottom-div-follow">
                                     <span className="span-number">77 </span>
                                     <span className="span-follow">팔로잉</span>
                                 </div>
-                                <div className="ProfileCenter-section-2-bottom-div-follow">
+                                <div className="ProfileCenter-section2-bottom-div-follow">
                                     <span className="span-number">77 </span>
                                     <span className="span-follow">팔로워</span>
                                 </div>
@@ -117,13 +118,14 @@ class ShowProfile extends Component {
                         </div>
                     </div>
 
-                    <div className="ProfileCenter-sectiony-4">
-                        <div className="ProfileCenter-section-4-ReadContents">        
+                    <div className="ProfileCenter-section4">
+                        <div className="ProfileCenter-section4-ReadContents">        
                         <ReadContents data={this.state} condition={this.props.params}/>
                         </div>
                     </div>
                 </div>
             </div>
+           </div> 
         );
     }
 }
