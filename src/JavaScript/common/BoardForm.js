@@ -14,6 +14,7 @@ class BoardForm extends Component {
 
       modalOpen:false,
       modalType:"",
+      modalContent:"",
     }
 
     
@@ -23,6 +24,7 @@ class BoardForm extends Component {
     this.setState({
       modalOpen:true,
       modalType:e.currentTarget.id,
+      modalContent:this.props.contents,
     })
   }
 
@@ -38,7 +40,7 @@ class BoardForm extends Component {
           <div className="boardCenter">
             <div className="boardCenterHead">
               <div className="boardCenterHead-Left">
-                {this.props.contents.userName}   {this.props.contents.insertTime} 
+                {this.props.contents.userName} {this.props.contents.userId} {this.props.contents.insertTime} 
               </div>
               <div className="boardCenterHead-Right">
                 <div className="boardCenterHead-Right-moreview">
@@ -90,7 +92,7 @@ class BoardForm extends Component {
           </div>
         </div>
         <Modal open={this.state.modalOpen} close={this.closeModal} header={this.state.modalType}>
-                  {this.state.modalType}
+          {this.state.modalContent}
         </Modal>
       </div>
       
