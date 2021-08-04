@@ -38,13 +38,15 @@ class BoardForm extends Component {
         <div className="board"> 
           <div className="boardLeft"><img src="https://lh3.googleusercontent.com/a/AATXAJwawDtU3RJLAKXUsZQwzjB6VhB_GiSen1NH_Het=s96-c"/></div>
           <div className="boardCenter">
+            
+          <div className="boardCenterBlank"></div>
             <div className="boardCenterHead">
               <div className="boardCenterHead-Left">
                 {this.props.contents.userName} {this.props.contents.userId} {this.props.contents.insertTime} 
               </div>
               <div className="boardCenterHead-Right">
-                <div className="boardCenterHead-Right-moreview">
                   <div className="boardCenterHead-Right-btn">
+                    <div className="boardCenterHead-Right-btn-div">
                     <svg className="optionsvg">
                       <g>
                         <circle cx="5" cy="12" r="2"></circle>
@@ -52,8 +54,8 @@ class BoardForm extends Component {
                         <circle cx="19" cy="12" r="2"></circle>
                       </g>  
                     </svg>
+                    </div>
                   </div>
-                </div>
               </div>
             </div>
             <div className="boardCenterBody">
