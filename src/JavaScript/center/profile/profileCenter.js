@@ -9,9 +9,11 @@ class ShowProfile extends Component {
           content:null,
           idx:null,
           userId:null,
+          botNumber: ["0","1","2"],
         }
     }
     render(){
+        const botNumber = 0;
         //{this.props.userId} (userId) 기준으로 userProfile 상단에 출력
         //해당 유저작성글 기준으로 readContent로 받아와서 출력
         return(
@@ -34,7 +36,13 @@ class ShowProfile extends Component {
                                 <h2>이름</h2>
                             </div>
                             <div className="ProfileCenter-title-right-bot">
-                            999트윗
+                                {
+                                    {
+                                        0 : <div> [숫자] 트윗 </div>,
+                                        1 : <div> [숫자] 사진 및 동영상 </div>,
+                                        2 : <div> [숫자] 마음에 들어요 </div>
+                                    } [botNumber]
+                                }
                             </div>
                         </div>
                     </div>
@@ -60,7 +68,7 @@ class ShowProfile extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="ProfileCenter-section2-section-1">
+                        <div className="ProfileCenter-section2-section1">
                             <div className="ProfileCenter-section2-section1-title"><span>이름 : 이해준</span></div>   
                             <div className="ProfileCenter-section2-section1-section"><span>UserId: {this.props.userId}</span></div>
                         </div>
@@ -99,21 +107,29 @@ class ShowProfile extends Component {
                         <div className="ProfileCenter-section-nav1">
                             <div className="ProfileCenter-section-nav1-text">
                                 트윗
+                                <div className="ProfileCenter-section-nav1-line"></div>
                             </div>
+                            
                         </div>
                         <div className="ProfileCenter-section-nav2">  
                             <div className="ProfileCenter-section-nav2-text">
                                 트윗 및 답글
+                                
+                                <div className="ProfileCenter-section-nav1-line"></div>
                             </div>
                         </div>
                         <div className="ProfileCenter-section-nav3">
                             <div className="ProfileCenter-section-nav3-text">
                                 미디어
+                                
+                                <div className="ProfileCenter-section-nav1-line"></div>
                             </div>
                         </div>    
                         <div className="ProfileCenter-section-nav4">                           
                             <div className="ProfileCenter-section-nav4-text">
                                 마음에 들어요
+                                
+                                <div className="ProfileCenter-section-nav1-line"></div>
                             </div>
                         </div>
                     </div>
