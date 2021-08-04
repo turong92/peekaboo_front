@@ -75,7 +75,7 @@
     margin-top: 0;
 }
 .ProfileCenter-title-right-bot {
-    width: 51.67px;
+    width: 120px;
     height: 16px;
     line-height: 22px;
     font-size: 13px;
@@ -237,6 +237,10 @@
     position: relative;
     text-align: center;
 }
+.ProfileCenter-section-nav :hover{
+    color: #1da1f2;
+    cursor: pointer;
+}
 .ProfileCenter-section-nav1{
     width: 82.531px;
     height: 53px;
@@ -250,7 +254,17 @@
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left : 20px;
+}
+.ProfileCenter-section-nav1-line{
+    width: 56px;
+    width: 100%;
+    height: 4px;
+    align-self: center;
+    margin-top: 6px;
+    bottom: 0px;
+    border-radius: 9999px;
 
+    background-color: #1da1f2;
 }
 .ProfileCenter-section-nav2{
     width: 138.469px;
