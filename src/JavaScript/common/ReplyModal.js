@@ -9,6 +9,7 @@ class Modal extends Component {
         if(!_newContent){
             window.alert("새로운 글을 작성해주세요");
         }else {
+            window.alert(_newContent);
             this.props.close();
         }
     }

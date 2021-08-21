@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
 import user from './userReducer';
 import count from './countReducer';
+import server from "./serverReducer";
 
 const rootReducer = combineReducers({
     user,
     count,
+    server,
 });
 
 export default rootReducer;

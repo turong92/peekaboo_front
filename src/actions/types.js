@@ -7,3 +7,5 @@ export const GET_USER_NAME = "GET_USER_NAME";
 export const SET_COUNT = "SET_COUNT";
 export const INCREASE_COUNT = "INCREASE_COUNT";
 export const DECREASE_COUNT = "DECREASE_COUNT";
+
+export const SEND_OBJ_TO_SERVER = "SEND_OBJ_TO_SERVER";
