@@ -18,9 +18,9 @@ class ReadContents extends Component {
             idx :'',
             id: '',
             contents:[
-                {idx:3, userName:"dummy3", userId:"google_115854284849039362768", insertTime:"2021-05-07", content:"2 어엿비너겨", viewCnt:999},
-                {idx:2, userName:"dummy2", userId:"google_115854284849039362768", insertTime:"2021-05-06", content:"3332222222222222222222222222222333333333333333333333333333333333333333333333", viewCnt:999},
-                {idx:1, userName:"dummy1", userId:"google_115854284849039362768", insertTime:"2021-05-05", content:"1234", viewCnt:999},
+                {idx:3, userName:"dummy3", userId:"google_115854284849039362768", insertTime:"2021-05-07", content:"2 어엿비너겨", viewCnt:999, likeCnt:35},
+                {idx:2, userName:"dummy2", userId:"google_115854284849039362768", insertTime:"2021-05-06", content:"3332222222222222222222222222222333333333333333333333333333333333333333333333", viewCnt:999, likeCnt:35},
+                {idx:1, userName:"dummy1", userId:"google_115854284849039362768", insertTime:"2021-05-05", content:"1234", viewCnt:999, likeCnt:35},
             ]
         }
     }
