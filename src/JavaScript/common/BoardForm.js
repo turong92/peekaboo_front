@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from "../common/ReplyModal";
 import * as serverAction from "../../actions/serverAction";
+import * as userAction from "../../actions/userAction";
 
 class BoardForm extends Component {
   constructor(props){
@@ -12,6 +13,7 @@ class BoardForm extends Component {
       insertTime:'',
       content:'',
       viewCnt:'',
+      
 
       modalOpen:false,
       modalType:"",
@@ -34,8 +36,14 @@ class BoardForm extends Component {
   }
 
   clickLike = () => {
-    const obj = {test1:"test1", test2:"test2"};
-    console.log(serverAction.sendObjToServer("/url", obj));
+    this.props.contents.isLiked = !this.props.contents.isLiked;
+    const obj = {
+      loginId:userAction.getUserId().payload,
+      contentId:this.props.contents.idx,
+      isLiked:this.props.contents.isLiked,
+    };
+    
+    //console.log(serverAction.sendObjToServer("/like-content", obj));
   }
 
   render() {
